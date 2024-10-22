@@ -82,11 +82,15 @@ function updateGameState(data) {
     document.getElementById('currentPlayer').textContent = data.currentPlayer + 1;
     
     const isMyTurn = data.currentPlayer === playerIndex;
-    updateAvailablePokemon(data.availablePokemon, isMyTurn);
+    
+    if (data.currentRound === 1 && data.currentPlayer === 0) {
+        introduceAllPokemon(data.availablePokemon);
+    } else {
+        updateAvailablePokemon(data.availablePokemon, isMyTurn);
+    }
+    
     updateTeams(data.teams);
     updateTurnIndicator(isMyTurn);
-
-    console.log(`Current player: ${data.currentPlayer}, My index: ${playerIndex}, Is my turn: ${isMyTurn}`); // Debug log
 }
 
 function updateAvailablePokemon(availablePokemon, isMyTurn) {
@@ -150,7 +154,43 @@ function calculateBST(baseStats) {
 function endDraft(teams) {
     const draftArea = document.getElementById('draftArea');
     draftArea.innerHTML = '<h2>Draft Complete!</h2>';
-    updateTeams(teams);
+    const teamsContainer = document.createElement('div');
+    teamsContainer.id = 'finalTeams';
+    
+    teams.forEach((team, index) => {
+        const teamDiv = document.createElement('div');
+        teamDiv.className = 'team-result';
+        teamDiv.innerHTML = `<h3>Player ${index + 1}${index === playerIndex ? ' (You)' : ''}</h3>`;
+        
+        const teamList = document.createElement('ul');
+        team.forEach(pokemon => {
+            const listItem = document.createElement('li');
+            listItem.textContent = pokemon.name;
+            teamList.appendChild(listItem);
+        });
+        teamDiv.appendChild(teamList);
+        
+        if (index === playerIndex) {
+            const copyButton = document.createElement('button');
+            copyButton.textContent = 'Copy Team';
+            copyButton.addEventListener('click', () => copyTeamToClipboard(team));
+            teamDiv.appendChild(copyButton);
+        }
+        
+        teamsContainer.appendChild(teamDiv);
+    });
+    
+    draftArea.appendChild(teamsContainer);
+}
+
+function copyTeamToClipboard(team) {
+    const showdownFormat = team.map(pokemon => pokemon.name).join('\n\n');
+    navigator.clipboard.writeText(showdownFormat).then(() => {
+        alert('Team copied to clipboard!');
+    }, (err) => {
+        console.error('Could not copy text: ', err);
+        alert('Failed to copy team. Please try again.');
+    });
 }
 
 function updateTurnIndicator(isMyTurn) {
@@ -182,13 +222,70 @@ function dramaticReveal(playerIndex, pokemon) {
     // Add dramatic animation
     setTimeout(() => {
         revealOverlay.classList.add('reveal');
-    }, 100);
+    }, 50);
     
-    // Remove the overlay after 3 seconds
+    // Remove the overlay after 1.5 seconds (reduced from 3 seconds)
     setTimeout(() => {
         revealOverlay.classList.remove('reveal');
         setTimeout(() => {
             document.body.removeChild(revealOverlay);
-        }, 500);
-    }, 3000);
+        }, 250);
+    }, 1500);
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function introducePokemon(pokemon, index) {
+    const revealOverlay = document.createElement('div');
+    revealOverlay.className = 'reveal-overlay';
+    revealOverlay.innerHTML = `
+        <div class="reveal-content">
+            <h2>Pokémon #${index + 1}</h2>
+            <div class="reveal-pokemon">
+                <div class="pokemon-name">${pokemon.name}</div>
+                <div class="pokemon-types">${pokemon.types.join(' / ')}</div>
+                <div class="pokemon-bst">BST: ${calculateBST(pokemon.baseStats)}</div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(revealOverlay);
+    
+    await sleep(50);
+    revealOverlay.classList.add('reveal');
+    
+    await sleep(1000); // Increased from 750ms to 1000ms
+    revealOverlay.classList.remove('reveal');
+    
+    await sleep(250);
+    document.body.removeChild(revealOverlay);
+    addPokemonToPool(pokemon);
+}
+
+function addPokemonToPool(pokemon) {
+    const availableDiv = document.getElementById('availablePokemon');
+    const button = document.createElement('button');
+    button.className = 'pokemon-button fade-in';
+    button.disabled = true;
+    button.innerHTML = `
+        <div class="pokemon-name">${pokemon.name}</div>
+        <div class="pokemon-types">${pokemon.types.join(' / ')}</div>
+        <div class="pokemon-bst">BST: ${calculateBST(pokemon.baseStats)}</div>
+    `;
+    availableDiv.appendChild(button);
+    
+    // Trigger reflow to ensure the fade-in animation plays
+    button.offsetHeight;
+    button.classList.remove('fade-in');
+}
+
+async function introduceAllPokemon(pokemonList) {
+    const availableDiv = document.getElementById('availablePokemon');
+    availableDiv.innerHTML = '<h3>Available Pokémon</h3>';
+    for (let i = 0; i < pokemonList.length; i++) {
+        await introducePokemon(pokemonList[i], i);
+        await sleep(300); // Increased from 200ms to 300ms
+    }
+    updateAvailablePokemon(pokemonList, playerIndex === 0);
 }

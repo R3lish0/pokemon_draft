@@ -96,12 +96,13 @@ function choosePokemon(ws, roomCode, pokemon) {
     if (room && playerIndex === room.currentPlayer) {
         broadcastReveal(roomCode, playerIndex, pokemon);
         
+        // Reduced timeout from 3000ms to 1750ms to match client-side reveal duration
         setTimeout(() => {
             room.teams[playerIndex].push(pokemon);
             room.availablePokemon = room.availablePokemon.filter(p => p.name !== pokemon.name);
             nextTurn(room);
             broadcastGameState(roomCode);
-        }, 3000);
+        }, 1750);
     } else {
         ws.send(JSON.stringify({ type: 'error', message: 'It\'s not your turn' }));
     }
@@ -158,13 +159,13 @@ function generateRandomPool(poolSize) {
     const pokemonList = Object.values(pokedex).filter(pokemon => 
         !pokemon.forme && !pokemon.isNonstandard && pokemon.tier !== 'Illegal'
     );
-    
     const shuffled = pokemonList.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, poolSize).map(pokemon => ({
-        name: pokemon.name,
-        types: pokemon.types,
-        baseStats: pokemon.baseStats
-    }));
+    const selected = shuffled.slice(0, poolSize);
+    return selected.sort((a, b) => calculateBST(b.baseStats) - calculateBST(a.baseStats));
+}
+
+function calculateBST(baseStats) {
+    return Object.values(baseStats).reduce((sum, stat) => sum + stat, 0);
 }
 
 const PORT = process.env.PORT || 3000;
