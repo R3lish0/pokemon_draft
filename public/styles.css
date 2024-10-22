@@ -165,3 +165,46 @@ input[type="number"], input[type="text"] {
 .team-result button:hover {
     background-color: var(--autumn-yellow);
 }
+
+.reveal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+}
+
+.reveal-overlay.reveal {
+    opacity: 1;
+}
+
+.reveal-content {
+    background-color: var(--autumn-cream);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transform: scale(0.8);
+    transition: transform 0.5s ease;
+}
+
+.reveal-overlay.reveal .reveal-content {
+    transform: scale(1);
+}
+
+.reveal-pokemon {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.reveal-pokemon .pokemon-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--autumn-red);
+}

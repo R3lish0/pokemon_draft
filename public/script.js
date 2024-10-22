@@ -28,6 +28,9 @@ function connectWebSocket() {
             case 'gameState':
                 updateGameState(data);
                 break;
+            case 'reveal':
+                dramaticReveal(data.playerIndex, data.pokemon);
+                break;
             case 'gameOver':
                 endDraft(data.teams);
                 break;
@@ -39,6 +42,14 @@ function connectWebSocket() {
 
     ws.onerror = (error) => {
         console.error('WebSocket Error:', error);
+    };
+
+    ws.onopen = () => {
+        console.log('WebSocket connection established');
+    };
+
+    ws.onclose = () => {
+        console.log('WebSocket connection closed');
     };
 }
 
@@ -70,9 +81,12 @@ function updateGameState(data) {
     document.getElementById('currentRound').textContent = data.currentRound;
     document.getElementById('currentPlayer').textContent = data.currentPlayer + 1;
     
-    updateAvailablePokemon(data.availablePokemon, data.currentPlayer === playerIndex);
+    const isMyTurn = data.currentPlayer === playerIndex;
+    updateAvailablePokemon(data.availablePokemon, isMyTurn);
     updateTeams(data.teams);
-    updateTurnIndicator(data.currentPlayer === playerIndex);
+    updateTurnIndicator(isMyTurn);
+
+    console.log(`Current player: ${data.currentPlayer}, My index: ${playerIndex}, Is my turn: ${isMyTurn}`); // Debug log
 }
 
 function updateAvailablePokemon(availablePokemon, isMyTurn) {
@@ -87,7 +101,7 @@ function updateAvailablePokemon(availablePokemon, isMyTurn) {
             <div class="pokemon-bst">BST: ${calculateBST(pokemon.baseStats)}</div>
         `;
         button.addEventListener('click', () => choosePokemon(pokemon));
-        button.disabled = isMyTurn;
+        button.disabled = !isMyTurn;
         availableDiv.appendChild(button);
     });
 }
@@ -107,11 +121,15 @@ function updateTeams(teams) {
 }
 
 function choosePokemon(pokemon) {
-    ws.send(JSON.stringify({ 
-        type: 'choose', 
-        roomCode: currentRoomCode, 
-        pokemon: pokemon 
-    }));
+    if (ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({ 
+            type: 'choose', 
+            roomCode: currentRoomCode, 
+            pokemon: pokemon 
+        }));
+    } else {
+        console.error('WebSocket is not open. ReadyState:', ws.readyState);
+    }
 }
 
 function createPokemonDiv(pokemon) {
@@ -137,5 +155,40 @@ function endDraft(teams) {
 
 function updateTurnIndicator(isMyTurn) {
     const turnIndicator = document.getElementById('turnIndicator');
-    turnIndicator.textContent = isMyTurn ? 'Your turn!' : 'Not your turn';
+    if (isMyTurn) {
+        turnIndicator.textContent = "It's your turn!";
+        turnIndicator.style.color = 'green';
+    } else {
+        turnIndicator.textContent = "Waiting for other player...";
+        turnIndicator.style.color = 'red';
+    }
+}
+
+function dramaticReveal(playerIndex, pokemon) {
+    const revealOverlay = document.createElement('div');
+    revealOverlay.className = 'reveal-overlay';
+    revealOverlay.innerHTML = `
+        <div class="reveal-content">
+            <h2>Player ${playerIndex + 1} chooses...</h2>
+            <div class="reveal-pokemon">
+                <div class="pokemon-name">${pokemon.name}</div>
+                <div class="pokemon-types">${pokemon.types.join(' / ')}</div>
+                <div class="pokemon-bst">BST: ${calculateBST(pokemon.baseStats)}</div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(revealOverlay);
+    
+    // Add dramatic animation
+    setTimeout(() => {
+        revealOverlay.classList.add('reveal');
+    }, 100);
+    
+    // Remove the overlay after 3 seconds
+    setTimeout(() => {
+        revealOverlay.classList.remove('reveal');
+        setTimeout(() => {
+            document.body.removeChild(revealOverlay);
+        }, 500);
+    }, 3000);
 }

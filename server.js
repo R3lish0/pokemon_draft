@@ -94,11 +94,29 @@ function choosePokemon(ws, roomCode, pokemon) {
     const room = rooms.get(roomCode);
     const playerIndex = room.players.indexOf(ws);
     if (room && playerIndex === room.currentPlayer) {
-        room.teams[playerIndex].push(pokemon);
-        room.availablePokemon = room.availablePokemon.filter(p => p.name !== pokemon.name);
-        nextTurn(room);
-        broadcastGameState(roomCode);
+        broadcastReveal(roomCode, playerIndex, pokemon);
+        
+        setTimeout(() => {
+            room.teams[playerIndex].push(pokemon);
+            room.availablePokemon = room.availablePokemon.filter(p => p.name !== pokemon.name);
+            nextTurn(room);
+            broadcastGameState(roomCode);
+        }, 3000);
+    } else {
+        ws.send(JSON.stringify({ type: 'error', message: 'It\'s not your turn' }));
     }
+}
+
+function broadcastReveal(roomCode, playerIndex, pokemon) {
+    const room = rooms.get(roomCode);
+    const revealMessage = {
+        type: 'reveal',
+        playerIndex: playerIndex,
+        pokemon: pokemon
+    };
+    room.players.forEach(player => {
+        player.send(JSON.stringify(revealMessage));
+    });
 }
 
 function nextTurn(room) {
