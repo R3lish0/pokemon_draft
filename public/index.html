@@ -20,6 +20,13 @@
             <div id="joinRoom">
                 <label for="roomCode">Room Code:</label>
                 <input type="text" id="roomCode">
+                <label for="playerSelect">Player Number:</label>
+                <select id="playerSelect">
+                    <option value="1">Player 1</option>
+                    <option value="2">Player 2</option>
+                    <option value="3">Player 3</option>
+                    <option value="4">Player 4</option>
+                </select>
                 <button id="joinRoomBtn">Join Room</button>
             </div>
         </div>
@@ -27,7 +34,7 @@
         <div id="waitingRoom" style="display: none;">
             <h2>Waiting for players...</h2>
             <p>Room Code: <span id="displayRoomCode"></span></p>
-            <p>Share this code with other players to join the draft.</p>
+            <ul id="playerList"></ul>
         </div>
 
         <div id="draftArea" style="display: none;">

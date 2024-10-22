@@ -19,11 +19,14 @@ function connectWebSocket() {
         switch(data.type) {
             case 'roomCreated':
                 playerIndex = data.playerIndex;
-                showWaitingRoom(data.roomCode);
+                showWaitingRoom(data);
                 break;
             case 'joined':
                 playerIndex = data.playerIndex;
-                showWaitingRoom(data.roomCode);
+                showWaitingRoom(data);
+                break;
+            case 'waitingRoom':
+                showWaitingRoom(data);
                 break;
             case 'gameState':
                 updateGameState(data);
@@ -64,14 +67,23 @@ function createRoom() {
 
 function joinRoom() {
     const roomCode = document.getElementById('roomCode').value.toUpperCase();
-    ws.send(JSON.stringify({ type: 'join', roomCode: roomCode }));
+    const selectedPlayer = document.getElementById('playerSelect').value;
+    ws.send(JSON.stringify({ type: 'join', roomCode: roomCode, selectedPlayer: parseInt(selectedPlayer) }));
 }
 
-function showWaitingRoom(roomCode) {
-    currentRoomCode = roomCode;
+function showWaitingRoom(data) {
     document.getElementById('setup').style.display = 'none';
     document.getElementById('waitingRoom').style.display = 'block';
-    document.getElementById('displayRoomCode').textContent = roomCode;
+    document.getElementById('displayRoomCode').textContent = data.roomCode;
+    
+    const playerList = document.getElementById('playerList');
+    playerList.innerHTML = '';
+    data.players.forEach((isPresent, index) => {
+        const li = document.createElement('li');
+        li.textContent = `Player ${index + 1}: ${isPresent ? 'Present' : 'Waiting...'}`;
+        if (index === playerIndex) li.textContent += ' (You)';
+        playerList.appendChild(li);
+    });
 }
 
 function updateGameState(data) {
@@ -83,7 +95,7 @@ function updateGameState(data) {
     
     const isMyTurn = data.currentPlayer === playerIndex;
     
-    if (data.currentRound === 1 && data.currentPlayer === 0) {
+    if (data.currentRound === 1 && data.currentPlayer === 0 && !data.teams.some(team => team.length > 0)) {
         introduceAllPokemon(data.availablePokemon);
     } else {
         updateAvailablePokemon(data.availablePokemon, isMyTurn);
@@ -116,7 +128,7 @@ function updateTeams(teams) {
     teams.forEach((team, index) => {
         const teamDiv = document.createElement('div');
         teamDiv.className = 'team';
-        teamDiv.innerHTML = `<h4>Player ${index + 1}</h4>`;
+        teamDiv.innerHTML = `<h4>Player ${index + 1}${index === playerIndex ? ' (You)' : ''}</h4>`;
         team.forEach(pokemon => {
             teamDiv.appendChild(createPokemonDiv(pokemon));
         });
@@ -255,7 +267,7 @@ async function introducePokemon(pokemon, index) {
     await sleep(50);
     revealOverlay.classList.add('reveal');
     
-    await sleep(1000); // Increased from 750ms to 1000ms
+    await sleep(1500); // Increased from 1000ms to 1500ms
     revealOverlay.classList.remove('reveal');
     
     await sleep(250);
@@ -283,9 +295,13 @@ function addPokemonToPool(pokemon) {
 async function introduceAllPokemon(pokemonList) {
     const availableDiv = document.getElementById('availablePokemon');
     availableDiv.innerHTML = '<h3>Available Pokémon</h3>';
-    for (let i = 0; i < pokemonList.length; i++) {
-        await introducePokemon(pokemonList[i], i);
-        await sleep(300); // Increased from 200ms to 300ms
+    
+    // Create a shuffled copy of the pokemonList
+    const shuffledList = [...pokemonList].sort(() => Math.random() - 0.5);
+    
+    for (let i = 0; i < shuffledList.length; i++) {
+        await introducePokemon(shuffledList[i], i);
+        await sleep(400); // Increased from 300ms to 400ms
     }
     updateAvailablePokemon(pokemonList, playerIndex === 0);
 }

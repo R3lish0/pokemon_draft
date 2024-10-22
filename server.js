@@ -31,7 +31,7 @@ wss.on('connection', (ws) => {
                 createRoom(ws, data.numPlayers);
                 break;
             case 'join':
-                joinRoom(ws, data.roomCode);
+                joinRoom(ws, data.roomCode, data.selectedPlayer);
                 break;
             case 'choose':
                 choosePokemon(ws, data.roomCode, data.pokemon);
@@ -59,34 +59,56 @@ wss.on('connection', (ws) => {
 function createRoom(ws, numPlayers) {
     const roomCode = Math.random().toString(36).substring(2, 8).toUpperCase();
     rooms.set(roomCode, {
-        players: [ws],
+        players: new Array(numPlayers).fill(null),
         numPlayers: numPlayers,
         availablePokemon: [],
-        teams: [[]],
+        teams: [],
         currentPlayer: 0,
-        currentRound: 1
+        currentRound: 1,
+        draftDirection: 1
     });
-    ws.send(JSON.stringify({ type: 'roomCreated', roomCode: roomCode, playerIndex: 0 }));
+    joinRoom(ws, roomCode, 1); // Automatically join as Player 1
 }
 
-function joinRoom(ws, roomCode) {
+function joinRoom(ws, roomCode, selectedPlayer) {
     const room = rooms.get(roomCode);
-    if (room && room.players.length < room.numPlayers) {
-        const playerIndex = room.players.length;
-        room.players.push(ws);
-        room.teams.push([]);
+    if (room) {
+        if (room.players.length >= room.numPlayers) {
+            ws.send(JSON.stringify({ type: 'error', message: 'Room is full' }));
+            return;
+        }
+        
+        const playerIndex = selectedPlayer - 1;
+        if (playerIndex < 0 || playerIndex >= room.numPlayers) {
+            ws.send(JSON.stringify({ type: 'error', message: 'Invalid player number' }));
+            return;
+        }
+        
+        if (room.players[playerIndex]) {
+            ws.send(JSON.stringify({ type: 'error', message: 'This player slot is already taken' }));
+            return;
+        }
+        
+        room.players[playerIndex] = ws;
         ws.send(JSON.stringify({ type: 'joined', roomCode: roomCode, playerIndex: playerIndex }));
-        if (room.players.length === room.numPlayers) {
+        
+        if (room.players.filter(p => p).length === room.numPlayers) {
             startGame(roomCode);
+        } else {
+            broadcastWaitingRoom(roomCode);
         }
     } else {
-        ws.send(JSON.stringify({ type: 'error', message: 'Invalid room code or room is full' }));
+        ws.send(JSON.stringify({ type: 'error', message: 'Invalid room code' }));
     }
 }
 
 function startGame(roomCode) {
     const room = rooms.get(roomCode);
     room.availablePokemon = generateRandomPool(room.numPlayers * 4);
+    room.teams = Array(room.numPlayers).fill().map(() => []);
+    room.currentPlayer = 0;
+    room.currentRound = 1;
+    room.draftDirection = 1; // 1 for forward, -1 for backward
     broadcastGameState(roomCode);
 }
 
@@ -121,8 +143,14 @@ function broadcastReveal(roomCode, playerIndex, pokemon) {
 }
 
 function nextTurn(room) {
-    room.currentPlayer = (room.currentPlayer + 1) % room.numPlayers;
-    if (room.currentPlayer === 0) {
+    room.currentPlayer += room.draftDirection;
+    if (room.currentPlayer >= room.numPlayers) {
+        room.currentPlayer = room.numPlayers - 1;
+        room.draftDirection = -1;
+        room.currentRound++;
+    } else if (room.currentPlayer < 0) {
+        room.currentPlayer = 0;
+        room.draftDirection = 1;
         room.currentRound++;
     }
     if (room.currentRound > 4) {
@@ -166,6 +194,19 @@ function generateRandomPool(poolSize) {
 
 function calculateBST(baseStats) {
     return Object.values(baseStats).reduce((sum, stat) => sum + stat, 0);
+}
+
+function broadcastWaitingRoom(roomCode) {
+    const room = rooms.get(roomCode);
+    const waitingState = {
+        type: 'waitingRoom',
+        roomCode: roomCode,
+        players: room.players.map(p => p !== null),
+        numPlayers: room.numPlayers
+    };
+    room.players.forEach(player => {
+        if (player) player.send(JSON.stringify(waitingState));
+    });
 }
 
 const PORT = process.env.PORT || 3000;
