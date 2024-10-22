@@ -62,18 +62,20 @@ function createRoom(ws, numPlayers) {
         players: [ws],
         numPlayers: numPlayers,
         availablePokemon: [],
-        teams: [],
+        teams: [[]],
         currentPlayer: 0,
         currentRound: 1
     });
-    ws.send(JSON.stringify({ type: 'roomCreated', roomCode: roomCode }));
+    ws.send(JSON.stringify({ type: 'roomCreated', roomCode: roomCode, playerIndex: 0 }));
 }
 
 function joinRoom(ws, roomCode) {
     const room = rooms.get(roomCode);
     if (room && room.players.length < room.numPlayers) {
+        const playerIndex = room.players.length;
         room.players.push(ws);
-        ws.send(JSON.stringify({ type: 'joined', roomCode: roomCode }));
+        room.teams.push([]);
+        ws.send(JSON.stringify({ type: 'joined', roomCode: roomCode, playerIndex: playerIndex }));
         if (room.players.length === room.numPlayers) {
             startGame(roomCode);
         }
@@ -85,14 +87,14 @@ function joinRoom(ws, roomCode) {
 function startGame(roomCode) {
     const room = rooms.get(roomCode);
     room.availablePokemon = generateRandomPool(room.numPlayers * 4);
-    room.teams = Array(room.numPlayers).fill().map(() => []);
     broadcastGameState(roomCode);
 }
 
 function choosePokemon(ws, roomCode, pokemon) {
     const room = rooms.get(roomCode);
-    if (room && room.players[room.currentPlayer] === ws) {
-        room.teams[room.currentPlayer].push(pokemon);
+    const playerIndex = room.players.indexOf(ws);
+    if (room && playerIndex === room.currentPlayer) {
+        room.teams[playerIndex].push(pokemon);
         room.availablePokemon = room.availablePokemon.filter(p => p.name !== pokemon.name);
         nextTurn(room);
         broadcastGameState(roomCode);
@@ -111,14 +113,15 @@ function nextTurn(room) {
 
 function broadcastGameState(roomCode) {
     const room = rooms.get(roomCode);
-    const gameState = {
-        type: 'gameState',
-        availablePokemon: room.availablePokemon,
-        teams: room.teams,
-        currentPlayer: room.currentPlayer,
-        currentRound: room.currentRound
-    };
-    room.players.forEach(player => {
+    room.players.forEach((player, index) => {
+        const gameState = {
+            type: 'gameState',
+            availablePokemon: room.availablePokemon,
+            teams: room.teams,
+            currentPlayer: room.currentPlayer,
+            currentRound: room.currentRound,
+            playerIndex: index
+        };
         player.send(JSON.stringify(gameState));
     });
 }

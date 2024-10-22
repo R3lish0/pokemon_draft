@@ -18,9 +18,11 @@ function connectWebSocket() {
         console.log('Received message:', data); // Debug log
         switch(data.type) {
             case 'roomCreated':
+                playerIndex = data.playerIndex;
                 showWaitingRoom(data.roomCode);
                 break;
             case 'joined':
+                playerIndex = data.playerIndex;
                 showWaitingRoom(data.roomCode);
                 break;
             case 'gameState':
@@ -68,13 +70,12 @@ function updateGameState(data) {
     document.getElementById('currentRound').textContent = data.currentRound;
     document.getElementById('currentPlayer').textContent = data.currentPlayer + 1;
     
-    updateAvailablePokemon(data.availablePokemon);
+    updateAvailablePokemon(data.availablePokemon, data.currentPlayer === playerIndex);
     updateTeams(data.teams);
-    
-    playerIndex = data.currentPlayer;
+    updateTurnIndicator(data.currentPlayer === playerIndex);
 }
 
-function updateAvailablePokemon(availablePokemon) {
+function updateAvailablePokemon(availablePokemon, isMyTurn) {
     const availableDiv = document.getElementById('availablePokemon');
     availableDiv.innerHTML = '<h3>Available Pokémon</h3>';
     availablePokemon.forEach((pokemon) => {
@@ -86,6 +87,7 @@ function updateAvailablePokemon(availablePokemon) {
             <div class="pokemon-bst">BST: ${calculateBST(pokemon.baseStats)}</div>
         `;
         button.addEventListener('click', () => choosePokemon(pokemon));
+        button.disabled = isMyTurn;
         availableDiv.appendChild(button);
     });
 }
@@ -131,4 +133,9 @@ function endDraft(teams) {
     const draftArea = document.getElementById('draftArea');
     draftArea.innerHTML = '<h2>Draft Complete!</h2>';
     updateTeams(teams);
+}
+
+function updateTurnIndicator(isMyTurn) {
+    const turnIndicator = document.getElementById('turnIndicator');
+    turnIndicator.textContent = isMyTurn ? 'Your turn!' : 'Not your turn';
 }
