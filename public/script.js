@@ -1,6 +1,6 @@
 let ws;
 let playerIndex;
-let currentRoomCode;
+let currentRoomCode = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('createRoomBtn').addEventListener('click', createRoom);
@@ -13,16 +13,20 @@ function connectWebSocket() {
     const host = window.location.host;
     ws = new WebSocket(`${protocol}//${host}`);
     
+    ws.onopen = () => {
+        console.log('WebSocket connection established');
+        document.getElementById('createRoomBtn').disabled = false;
+        document.getElementById('joinRoomBtn').disabled = false;
+    };
+
     ws.onmessage = (event) => {
         const data = JSON.parse(event.data);
-        console.log('Received message:', data); // Debug log
+        console.log('Received message:', data);
+        
         switch(data.type) {
             case 'roomCreated':
-                playerIndex = data.playerIndex;
-                showWaitingRoom(data);
-                break;
-            case 'joined':
-                playerIndex = data.playerIndex;
+                console.log('Room created:', data.roomCode);
+                currentRoomCode = data.roomCode;
                 showWaitingRoom(data);
                 break;
             case 'waitingRoom':
@@ -38,8 +42,11 @@ function connectWebSocket() {
                 endDraft(data.teams);
                 break;
             case 'error':
+                console.error('Received error:', data.message);
                 alert(data.message);
                 break;
+            default:
+                console.warn('Unknown message type:', data.type);
         }
     };
 
@@ -47,53 +54,99 @@ function connectWebSocket() {
         console.error('WebSocket Error:', error);
     };
 
-    ws.onopen = () => {
-        console.log('WebSocket connection established');
-    };
-
     ws.onclose = () => {
         console.log('WebSocket connection closed');
+        document.getElementById('createRoomBtn').disabled = true;
+        document.getElementById('joinRoomBtn').disabled = true;
     };
 }
 
 function createRoom() {
+    console.log('Create room button clicked');
     const numPlayers = parseInt(document.getElementById('numPlayers').value);
-    if (numPlayers < 1 || numPlayers > 8) {
-        alert("Please enter a number between 1 and 8");
+    if (numPlayers < 2 || numPlayers > 8) {
+        alert("Please enter a number between 2 and 8");
         return;
     }
-    ws.send(JSON.stringify({ type: 'create', numPlayers: numPlayers }));
+    if (ws.readyState === WebSocket.OPEN) {
+        console.log('Sending create room request');
+        ws.send(JSON.stringify({ type: 'create', numPlayers: numPlayers }));
+    } else {
+        console.error('WebSocket is not open. ReadyState:', ws.readyState);
+        alert('Unable to connect to server. Please try again.');
+    }
 }
 
 function joinRoom() {
+    console.log('Join room button clicked');
     const roomCode = document.getElementById('roomCode').value.toUpperCase();
-    const selectedPlayer = document.getElementById('playerSelect').value;
-    ws.send(JSON.stringify({ type: 'join', roomCode: roomCode, selectedPlayer: parseInt(selectedPlayer) }));
+    if (ws.readyState === WebSocket.OPEN) {
+        console.log('Sending join room request');
+        ws.send(JSON.stringify({ type: 'join', roomCode: roomCode }));
+    } else {
+        console.error('WebSocket is not open. ReadyState:', ws.readyState);
+        alert('Unable to connect to server. Please try again.');
+    }
 }
 
 function showWaitingRoom(data) {
+    console.log('Showing waiting room', data);
+    currentRoomCode = data.roomCode; // Ensure room code is set
     document.getElementById('setup').style.display = 'none';
     document.getElementById('waitingRoom').style.display = 'block';
     document.getElementById('displayRoomCode').textContent = data.roomCode;
     
-    const playerList = document.getElementById('playerList');
-    playerList.innerHTML = '';
-    data.players.forEach((isPresent, index) => {
-        const li = document.createElement('li');
-        li.textContent = `Player ${index + 1}: ${isPresent ? 'Present' : 'Waiting...'}`;
-        if (index === playerIndex) li.textContent += ' (You)';
-        playerList.appendChild(li);
+    const playerSlots = document.getElementById('playerSlots');
+    playerSlots.innerHTML = '';
+    data.players.forEach((isOccupied, index) => {
+        const button = document.createElement('button');
+        button.textContent = isOccupied ? `Player ${index + 1}${index === data.yourIndex ? ' (You)' : ''}` : `Join as Player ${index + 1}`;
+        button.disabled = isOccupied && index !== data.yourIndex;
+        button.classList.add(index === data.yourIndex ? 'your-slot' : 'available-slot');
+        button.onclick = () => selectSlot(index);
+        playerSlots.appendChild(button);
     });
+
+    // Add temp slot button
+    const tempButton = document.createElement('button');
+    tempButton.textContent = data.tempSlot ? (data.yourIndex === 'temp' ? 'Temp (You)' : 'Temp (Occupied)') : 'Join Temp';
+    tempButton.disabled = data.tempSlot && data.yourIndex !== 'temp';
+    tempButton.classList.add(data.yourIndex === 'temp' ? 'your-slot' : 'available-slot');
+    tempButton.onclick = () => selectSlot('temp');
+    playerSlots.appendChild(tempButton);
+
+    const startGameBtn = document.getElementById('startGameBtn');
+    startGameBtn.style.display = data.players.every(p => p) ? 'block' : 'none';
+    startGameBtn.onclick = () => startGame(currentRoomCode); // Pass room code to startGame
+}
+
+function selectSlot(index) {
+    console.log('Selecting slot', index);
+    ws.send(JSON.stringify({ type: 'selectSlot', slotIndex: index }));
+}
+
+function startGame() {
+    console.log('Attempting to start game for room:', currentRoomCode);
+    if (!currentRoomCode) {
+        console.error('No room code available');
+        alert('Unable to start game: No room code available');
+        return;
+    }
+    ws.send(JSON.stringify({ type: 'startGame', roomCode: currentRoomCode }));
 }
 
 function updateGameState(data) {
+    console.log('Updating game state:', data);
+    currentRoomCode = data.roomCode;
     document.getElementById('waitingRoom').style.display = 'none';
     document.getElementById('draftArea').style.display = 'block';
     
     document.getElementById('currentRound').textContent = data.currentRound;
     document.getElementById('currentPlayer').textContent = data.currentPlayer + 1;
     
+    playerIndex = data.playerIndex;
     const isMyTurn = data.currentPlayer === playerIndex;
+    console.log('Is my turn:', isMyTurn, 'Player Index:', playerIndex, 'Current Player:', data.currentPlayer);
     
     if (data.currentRound === 1 && data.currentPlayer === 0 && !data.teams.some(team => team.length > 0)) {
         introduceAllPokemon(data.availablePokemon);
@@ -106,6 +159,7 @@ function updateGameState(data) {
 }
 
 function updateAvailablePokemon(availablePokemon, isMyTurn) {
+    console.log('Updating available Pokemon. Is my turn:', isMyTurn);
     const availableDiv = document.getElementById('availablePokemon');
     availableDiv.innerHTML = '<h3>Available Pokémon</h3>';
     availablePokemon.forEach((pokemon) => {
@@ -120,9 +174,13 @@ function updateAvailablePokemon(availablePokemon, isMyTurn) {
         button.disabled = !isMyTurn;
         availableDiv.appendChild(button);
     });
+
+    // Add a log to check the state of the buttons
+    console.log('Buttons disabled:', !isMyTurn);
 }
 
 function updateTeams(teams) {
+    console.log('Updating teams:', teams);
     const teamsDiv = document.getElementById('teams');
     teamsDiv.innerHTML = '<h3>Teams</h3>';
     teams.forEach((team, index) => {
@@ -137,6 +195,7 @@ function updateTeams(teams) {
 }
 
 function choosePokemon(pokemon) {
+    console.log('Attempting to choose Pokemon:', pokemon.name, 'for room:', currentRoomCode);
     if (ws.readyState === WebSocket.OPEN) {
         ws.send(JSON.stringify({ 
             type: 'choose', 

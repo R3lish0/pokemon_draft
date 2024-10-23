@@ -222,3 +222,45 @@ input[type="number"], input[type="text"] {
 .pokemon-button {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+#playerSlots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#playerSlots button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#playerSlots button.your-slot {
+    background-color: var(--autumn-yellow);
+    color: var(--autumn-dark);
+}
+
+#playerSlots button.available-slot {
+    background-color: var(--autumn-cream);
+    color: var(--autumn-dark);
+}
+
+#playerSlots button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#startGameBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--autumn-red);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#startGameBtn:hover {
+    background-color: var(--autumn-orange);
+}

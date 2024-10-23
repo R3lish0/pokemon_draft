@@ -13,28 +13,22 @@
         <div id="setup">
             <h2>Start a New Draft</h2>
             <div id="createRoom">
-                <label for="numPlayers">Number of players (2-4 recommended):</label>
-                <input type="number" id="numPlayers" min="1" max="8" value="2">
+                <label for="numPlayers">Number of players:</label>
+                <input type="number" id="numPlayers" min="2" max="8" value="4">
                 <button id="createRoomBtn">Create Room</button>
             </div>
             <div id="joinRoom">
                 <label for="roomCode">Room Code:</label>
                 <input type="text" id="roomCode">
-                <label for="playerSelect">Player Number:</label>
-                <select id="playerSelect">
-                    <option value="1">Player 1</option>
-                    <option value="2">Player 2</option>
-                    <option value="3">Player 3</option>
-                    <option value="4">Player 4</option>
-                </select>
                 <button id="joinRoomBtn">Join Room</button>
             </div>
         </div>
 
         <div id="waitingRoom" style="display: none;">
-            <h2>Waiting for players...</h2>
+            <h2>Waiting Room</h2>
             <p>Room Code: <span id="displayRoomCode"></span></p>
-            <ul id="playerList"></ul>
+            <div id="playerSlots"></div>
+            <button id="startGameBtn" style="display: none;">Start Game</button>
         </div>
 
         <div id="draftArea" style="display: none;">
