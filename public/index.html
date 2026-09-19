@@ -2,49 +2,209 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autumn Pokémon Draft Simulator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Run a live snake-draft for Pokemon teams with friends.">
+    <title>Autumn Pokémon Draft</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Autumn Pokémon Draft Simulator</h1>
-        
-        <div id="setup">
-            <h2>Start a New Draft</h2>
-            <div id="createRoom">
-                <label for="numPlayers">Number of players:</label>
-                <input type="number" id="numPlayers" min="2" max="8" value="4">
-                <button id="createRoomBtn">Create Room</button>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-mark" aria-hidden="true">🍂</span>
+            <span class="brand-text">Autumn Draft</span>
+        </div>
+
+        <div class="topbar-right">
+            <button id="roomChip" class="room-chip" type="button" hidden>
+                <span class="room-chip-label">Room</span>
+                <code id="roomChipCode">····</code>
+                <span class="room-chip-action" aria-hidden="true">Copy link</span>
+            </button>
+            <p id="connection" class="connection" data-state="connecting" role="status">
+                <span class="connection-dot" aria-hidden="true"></span>
+                <span id="connectionText">Connecting…</span>
+            </p>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ============================ home ============================ -->
+        <section id="screen-home" class="screen" hidden>
+            <div class="hero">
+                <h1>Draft a team, one pick at a time</h1>
+                <p class="hero-sub">
+                    Everyone joins the same room, a shared pool of Pokémon appears, and you take
+                    turns claiming them in snake order. Picks are live — no refreshing.
+                </p>
             </div>
-            <div id="joinRoom">
-                <label for="roomCode">Room Code:</label>
-                <input type="text" id="roomCode">
-                <button id="joinRoomBtn">Join Room</button>
+
+            <div class="card-grid">
+                <form id="createForm" class="card" autocomplete="off">
+                    <h2>Start a draft</h2>
+                    <p class="card-sub">You'll get a room code to share.</p>
+
+                    <label class="field">
+                        <span class="field-label">Your name</span>
+                        <input type="text" id="createName" maxlength="20" placeholder="Trainer" autocomplete="nickname">
+                    </label>
+
+                    <div class="field-row">
+                        <label class="field">
+                            <span class="field-label">Players</span>
+                            <input type="number" id="numPlayers" min="2" max="8" value="4" inputmode="numeric">
+                        </label>
+                        <label class="field">
+                            <span class="field-label">Team size</span>
+                            <input type="number" id="teamSize" min="1" max="6" value="6" inputmode="numeric">
+                        </label>
+                    </div>
+
+                    <div class="field-row">
+                        <label class="field">
+                            <span class="field-label">Spare picks <span class="hint-mark" title="Extra Pokémon per player on top of the exact-fit pool. Leave at 0 so the pool runs dry exactly as the draft ends.">?</span></span>
+                            <input type="number" id="extraPerPlayer" min="0" max="6" value="0" inputmode="numeric">
+                        </label>
+                        <label class="field">
+                            <span class="field-label">Seconds per pick</span>
+                            <input type="number" id="pickSeconds" min="15" max="300" step="5" value="60" inputmode="numeric">
+                        </label>
+                    </div>
+
+                    <p id="poolPreview" class="pool-preview" aria-live="polite"></p>
+                    <button class="btn btn-primary btn-block" type="submit" data-needs-connection>Create room</button>
+                </form>
+
+                <form id="joinForm" class="card" autocomplete="off">
+                    <h2>Join a draft</h2>
+                    <p class="card-sub">Ask the host for their four-letter code.</p>
+
+                    <label class="field">
+                        <span class="field-label">Your name</span>
+                        <input type="text" id="joinName" maxlength="20" placeholder="Trainer" autocomplete="nickname">
+                    </label>
+
+                    <label class="field">
+                        <span class="field-label">Room code</span>
+                        <input type="text" id="joinCode" class="code-input" maxlength="4" placeholder="ABCD"
+                               autocapitalize="characters" spellcheck="false">
+                    </label>
+
+                    <button class="btn btn-primary btn-block" type="submit" data-needs-connection>Join room</button>
+
+                    <p class="card-foot">
+                        Lost your connection? Refresh this tab and you'll drop straight back
+                        into your seat — and if you don't make it back in time, the pick clock
+                        covers you so the draft keeps moving.
+                    </p>
+                </form>
             </div>
-        </div>
+        </section>
 
-        <div id="waitingRoom" style="display: none;">
-            <h2>Waiting Room</h2>
-            <p>Room Code: <span id="displayRoomCode"></span></p>
-            <div id="playerSlots"></div>
-            <button id="startGameBtn" style="display: none;">Start Game</button>
-        </div>
+        <!-- =========================== lobby ============================ -->
+        <section id="screen-lobby" class="screen" hidden>
+            <div class="lobby-head">
+                <div>
+                    <p class="eyebrow">Waiting room</p>
+                    <h1 id="lobbyTitle">Room ····</h1>
+                    <p id="lobbySummary" class="lobby-summary"></p>
+                </div>
+                <button id="shareBtn" class="btn btn-ghost" type="button">Copy invite link</button>
+            </div>
 
-        <div id="draftArea" style="display: none;">
-            <h2>Pokémon Draft</h2>
-            <p>Round <span id="currentRound">1</span> - Player <span id="currentPlayer">1</span>'s turn</p>
-            <div id="turnIndicator"></div>
-            <div id="availablePokemon"></div>
-            <div id="teams"></div>
-        </div>
+            <ol id="lobbyPlayers" class="player-list"></ol>
 
-        <div id="draftComplete" style="display: none;">
-            <h2>Draft Complete!</h2>
-            <div id="finalTeams"></div>
-        </div>
-    </div>
+            <div class="lobby-actions">
+                <button id="startBtn" class="btn btn-primary" type="button" data-needs-connection>Start draft</button>
+                <button id="leaveBtn" class="btn btn-ghost" type="button">Leave room</button>
+            </div>
+            <p id="startHint" class="start-hint" aria-live="polite"></p>
+        </section>
 
-    <script src="script.js"></script>
+        <!-- =========================== draft ============================ -->
+        <section id="screen-draft" class="screen" hidden>
+            <div id="turnBar" class="turn-bar">
+                <div class="turn-main">
+                    <p id="turnHeadline" class="turn-headline">—</p>
+                    <p id="turnMeta" class="turn-meta"></p>
+                </div>
+                <div class="turn-clock">
+                    <span id="turnSeconds" class="turn-seconds">—</span>
+                    <div class="turn-track" role="presentation"><div id="turnFill" class="turn-fill"></div></div>
+                </div>
+            </div>
+
+            <p id="upNext" class="up-next"></p>
+
+            <div class="draft-layout">
+                <div class="pool-pane">
+                    <div class="pool-head">
+                        <h2>Pool <span id="poolCount" class="count-pill">0</span></h2>
+                        <div class="pool-tools">
+                            <input type="search" id="poolSearch" class="tool-input" placeholder="Search name or type"
+                                   autocomplete="off" spellcheck="false" aria-label="Search the pool">
+                            <select id="poolType" class="tool-input" aria-label="Filter by type">
+                                <option value="">All types</option>
+                            </select>
+                            <select id="poolSort" class="tool-input" aria-label="Sort the pool">
+                                <option value="bst-desc">Highest BST</option>
+                                <option value="bst-asc">Lowest BST</option>
+                                <option value="usage-desc">Most used</option>
+                                <option value="speed-desc">Fastest</option>
+                                <option value="name-asc">A → Z</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="poolGrid" class="pool-grid"></div>
+                    <p id="poolEmpty" class="empty-note" hidden>Nothing matches that filter.</p>
+                </div>
+
+                <aside class="side-pane">
+                    <section class="panel">
+                        <h2>Teams</h2>
+                        <div id="teamsBoard" class="teams-board"></div>
+                    </section>
+                    <section class="panel">
+                        <h2>Pick log</h2>
+                        <ol id="pickLog" class="pick-log"></ol>
+                    </section>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ========================== results =========================== -->
+        <section id="screen-results" class="screen" hidden>
+            <div class="results-head">
+                <p class="eyebrow">Draft complete</p>
+                <h1>Final teams</h1>
+                <p id="resultsSummary" class="lobby-summary"></p>
+            </div>
+            <div id="resultTeams" class="result-teams"></div>
+            <div class="lobby-actions">
+                <button id="newDraftBtn" class="btn btn-primary" type="button">Start another draft</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="toasts" class="toasts" role="status" aria-live="polite"></div>
+
+    <template id="tpl-pokemon-card">
+        <button class="mon" type="button">
+            <span class="mon-sprite"><img alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span>
+            <span class="mon-body">
+                <span class="mon-name"></span>
+                <span class="mon-types"></span>
+                <span class="mon-stats">
+                    <span class="mon-bst"></span>
+                    <span class="mon-spe"></span>
+                    <span class="mon-usage"></span>
+                </span>
+            </span>
+        </button>
+    </template>
+
+    <script src="app.js"></script>
 </body>
 </html>

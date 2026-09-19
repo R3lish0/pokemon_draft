@@ -1,0 +1,6728 @@
+[
+  {
+    "id": "abomasnow",
+    "name": "Abomasnow",
+    "types": [
+      "Grass",
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 112,
+      "def": 95,
+      "spa": 112,
+      "spd": 105,
+      "spe": 80
+    },
+    "bst": 669,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/_m49GlW98tNG--X08aPBG-160x160.png",
+    "sprite": "sprites/abomasnow.png"
+  },
+  {
+    "id": "absol",
+    "name": "Absol",
+    "types": [
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 150,
+      "def": 80,
+      "spa": 95,
+      "spd": 80,
+      "spe": 95
+    },
+    "bst": 640,
+    "usage": 2,
+    "art": "https://img.pokebase.app/pokemon-champions/PF_QIWYI_UjHRSsrmSWUq-160x160.png",
+    "sprite": "sprites/absol.png"
+  },
+  {
+    "id": "aegislash",
+    "name": "Aegislash",
+    "types": [
+      "Steel",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 70,
+      "def": 160,
+      "spa": 70,
+      "spd": 160,
+      "spe": 80
+    },
+    "bst": 675,
+    "usage": 1,
+    "art": "https://img.pokebase.app/pokemon-champions/_gXz-N0N5D1LlhhUdvU72-160x160.png",
+    "sprite": "sprites/aegislash.png"
+  },
+  {
+    "id": "aegislash-blade",
+    "name": "Aegislash (Blade)",
+    "types": [
+      "Steel",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 160,
+      "def": 70,
+      "spa": 160,
+      "spd": 70,
+      "spe": 80
+    },
+    "bst": 675,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/fme4bBtNwjnSDEAovl3tF-160x160.png",
+    "sprite": "sprites/aegislash-blade.png"
+  },
+  {
+    "id": "aegislash-shield",
+    "name": "Aegislash (Shield)",
+    "types": [
+      "Steel",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 70,
+      "def": 160,
+      "spa": 70,
+      "spd": 160,
+      "spe": 80
+    },
+    "bst": 675,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/c2L61qkhAINiD0L422pD3-160x160.png",
+    "sprite": "sprites/aegislash-shield.png"
+  },
+  {
+    "id": "aerodactyl",
+    "name": "Aerodactyl",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 125,
+      "def": 85,
+      "spa": 80,
+      "spd": 95,
+      "spe": 150
+    },
+    "bst": 690,
+    "usage": 4,
+    "art": "https://img.pokebase.app/pokemon-champions/tfy93-yB-eYE43XLM8pYr-160x160.png",
+    "sprite": "sprites/aerodactyl.png"
+  },
+  {
+    "id": "aggron",
+    "name": "Aggron",
+    "types": [
+      "Steel",
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 130,
+      "def": 200,
+      "spa": 80,
+      "spd": 80,
+      "spe": 70
+    },
+    "bst": 705,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/w4q5WY7KJzBP84Fyiq49F-160x160.png",
+    "sprite": "sprites/aggron.png"
+  },
+  {
+    "id": "alakazam",
+    "name": "Alakazam",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 70,
+      "def": 65,
+      "spa": 155,
+      "spd": 115,
+      "spe": 140
+    },
+    "bst": 675,
+    "usage": 0.8,
+    "art": "https://img.pokebase.app/pokemon-champions/fU0Ud-qhKinjPp1MEG2a3-160x160.png",
+    "sprite": "sprites/alakazam.png"
+  },
+  {
+    "id": "alcremie",
+    "name": "Alcremie",
+    "types": [
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 80,
+      "def": 95,
+      "spa": 130,
+      "spd": 141,
+      "spe": 84
+    },
+    "bst": 670,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/KuLWjjZwxNvwyV1nLItsU-160x160.png",
+    "sprite": "sprites/alcremie.png"
+  },
+  {
+    "id": "ninetales-alola",
+    "name": "Alolan Ninetales",
+    "types": [
+      "Ice",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 148,
+      "atk": 87,
+      "def": 95,
+      "spa": 101,
+      "spd": 120,
+      "spe": 129
+    },
+    "bst": 680,
+    "usage": 3.2,
+    "art": "https://img.pokebase.app/pokemon-champions/OTBv1UmTx31QeVj98DCLo-160x160.png",
+    "sprite": "sprites/ninetales-alola.png"
+  },
+  {
+    "id": "persian-alola",
+    "name": "Alolan Persian",
+    "types": [
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 80,
+      "def": 80,
+      "spa": 95,
+      "spd": 85,
+      "spe": 135
+    },
+    "bst": 615,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/ATUNn-FFCNja8NkQqPdqa-160x160.png",
+    "sprite": "sprites/persian-alola.png"
+  },
+  {
+    "id": "raichu-alola",
+    "name": "Alolan Raichu",
+    "types": [
+      "Electric",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 105,
+      "def": 70,
+      "spa": 115,
+      "spd": 105,
+      "spe": 130
+    },
+    "bst": 660,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/1aQHZP3PGvUC3S84glPyc-160x160.png",
+    "sprite": "sprites/raichu-alola.png"
+  },
+  {
+    "id": "altaria",
+    "name": "Altaria",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 90,
+      "def": 110,
+      "spa": 90,
+      "spd": 125,
+      "spe": 100
+    },
+    "bst": 665,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/p7xULNqe2LVI665yWm7Xp-160x160.png",
+    "sprite": "sprites/altaria.png"
+  },
+  {
+    "id": "ampharos",
+    "name": "Ampharos",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 95,
+      "def": 105,
+      "spa": 135,
+      "spd": 110,
+      "spe": 75
+    },
+    "bst": 685,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/jgkOqV6iJz-iASd47QWCK-160x160.png",
+    "sprite": "sprites/ampharos.png"
+  },
+  {
+    "id": "annihilape",
+    "name": "Annihilape",
+    "types": [
+      "Fighting",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 185,
+      "atk": 135,
+      "def": 100,
+      "spa": 70,
+      "spd": 110,
+      "spe": 110
+    },
+    "bst": 710,
+    "usage": 2.7,
+    "art": "https://img.pokebase.app/pokemon-champions/tml77ns-ywkQpvuhOBJ1p-160x160.png",
+    "sprite": "sprites/annihilape.png"
+  },
+  {
+    "id": "appletun",
+    "name": "Appletun",
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 185,
+      "atk": 105,
+      "def": 100,
+      "spa": 120,
+      "spd": 100,
+      "spe": 50
+    },
+    "bst": 660,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/W0hyUQSj-pwUtdmXBVK_x-160x160.png",
+    "sprite": "sprites/appletun.png"
+  },
+  {
+    "id": "araquanid",
+    "name": "Araquanid",
+    "types": [
+      "Water",
+      "Bug"
+    ],
+    "baseStats": {
+      "hp": 143,
+      "atk": 90,
+      "def": 112,
+      "spa": 70,
+      "spd": 152,
+      "spe": 62
+    },
+    "bst": 629,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/sYIp-nrXTHhqUzkyPiunc-160x160.png",
+    "sprite": "sprites/araquanid.png"
+  },
+  {
+    "id": "arbok",
+    "name": "Arbok",
+    "types": [
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 115,
+      "def": 89,
+      "spa": 85,
+      "spd": 99,
+      "spe": 100
+    },
+    "bst": 623,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/5MiToI8KEiVx0lzybF1Cu-160x160.png",
+    "sprite": "sprites/arbok.png"
+  },
+  {
+    "id": "arboliva",
+    "name": "Arboliva",
+    "types": [
+      "Grass",
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 89,
+      "def": 110,
+      "spa": 145,
+      "spd": 129,
+      "spe": 59
+    },
+    "bst": 685,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/zbZ0X79yFUGQupG7vSCLH-160x160.png",
+    "sprite": "sprites/arboliva.png"
+  },
+  {
+    "id": "arcanine",
+    "name": "Arcanine",
+    "types": [
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 130,
+      "def": 100,
+      "spa": 120,
+      "spd": 100,
+      "spe": 115
+    },
+    "bst": 730,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/0QcKTBwxUJ9XycAGkwAXl-160x160.png",
+    "sprite": "sprites/arcanine.png"
+  },
+  {
+    "id": "archaludon",
+    "name": "Archaludon",
+    "types": [
+      "Steel",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 125,
+      "def": 150,
+      "spa": 145,
+      "spd": 85,
+      "spe": 105
+    },
+    "bst": 775,
+    "usage": 10.5,
+    "art": "https://img.pokebase.app/pokemon-champions/Oyx1c9ecFHIL5J3FVhjF3-160x160.png",
+    "sprite": "sprites/archaludon.png"
+  },
+  {
+    "id": "ariados",
+    "name": "Ariados",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 110,
+      "def": 90,
+      "spa": 80,
+      "spd": 90,
+      "spe": 60
+    },
+    "bst": 575,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/KTTSddzmB14sR2-KBPIdl-160x160.png",
+    "sprite": "sprites/ariados.png"
+  },
+  {
+    "id": "armarouge",
+    "name": "Armarouge",
+    "types": [
+      "Fire",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 80,
+      "def": 120,
+      "spa": 145,
+      "spd": 100,
+      "spe": 95
+    },
+    "bst": 700,
+    "usage": 5.9,
+    "art": "https://img.pokebase.app/pokemon-champions/b1jqDKDuh98bkeDJPkjS5-160x160.png",
+    "sprite": "sprites/armarouge.png"
+  },
+  {
+    "id": "aromatisse",
+    "name": "Aromatisse",
+    "types": [
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 176,
+      "atk": 92,
+      "def": 92,
+      "spa": 119,
+      "spd": 109,
+      "spe": 49
+    },
+    "bst": 637,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/fZIH1i_pR-tGkuzOzhjMz-160x160.png",
+    "sprite": "sprites/aromatisse.png"
+  },
+  {
+    "id": "audino",
+    "name": "Audino",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 178,
+      "atk": 80,
+      "def": 106,
+      "spa": 80,
+      "spd": 106,
+      "spe": 70
+    },
+    "bst": 620,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/18DEkd7RDVxpMxa-yS16t-160x160.png",
+    "sprite": "sprites/audino.png"
+  },
+  {
+    "id": "aurorus",
+    "name": "Aurorus",
+    "types": [
+      "Rock",
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 198,
+      "atk": 97,
+      "def": 92,
+      "spa": 119,
+      "spd": 112,
+      "spe": 78
+    },
+    "bst": 696,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/ATIYn-BSQFbHVaPqvUG47-160x160.png",
+    "sprite": "sprites/aurorus.png"
+  },
+  {
+    "id": "avalugg",
+    "name": "Avalugg",
+    "types": [
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 137,
+      "def": 204,
+      "spa": 64,
+      "spd": 66,
+      "spe": 48
+    },
+    "bst": 689,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/QVSj56rRg_SIS3rN-bucY-160x160.png",
+    "sprite": "sprites/avalugg.png"
+  },
+  {
+    "id": "azumarill",
+    "name": "Azumarill",
+    "types": [
+      "Water",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 70,
+      "def": 100,
+      "spa": 80,
+      "spd": 100,
+      "spe": 70
+    },
+    "bst": 595,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/N8hzK1jy6FcBoKRn_S_V--160x160.png",
+    "sprite": "sprites/azumarill.png"
+  },
+  {
+    "id": "banette",
+    "name": "Banette",
+    "types": [
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 139,
+      "atk": 135,
+      "def": 85,
+      "spa": 103,
+      "spd": 83,
+      "spe": 85
+    },
+    "bst": 630,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/Jx2uGfeoF9yaJf3NJhzZM-160x160.png",
+    "sprite": "sprites/banette.png"
+  },
+  {
+    "id": "barbaracle",
+    "name": "Barbaracle",
+    "types": [
+      "Rock",
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 147,
+      "atk": 125,
+      "def": 135,
+      "spa": 74,
+      "spd": 106,
+      "spe": 88
+    },
+    "bst": 675,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/8sIMgnIu8iFH5Cq4ks_8e-160x160.png",
+    "sprite": "sprites/barbaracle.png"
+  },
+  {
+    "id": "basculegion",
+    "name": "Basculegion",
+    "types": [
+      "Water",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 195,
+      "atk": 132,
+      "def": 85,
+      "spa": 100,
+      "spd": 95,
+      "spe": 98
+    },
+    "bst": 705,
+    "usage": 23.6,
+    "art": "https://img.pokebase.app/pokemon-champions/4Nj3qHhQnci8V-7HIhCQS-160x160.png",
+    "sprite": "sprites/basculegion.png"
+  },
+  {
+    "id": "basculegion-female",
+    "name": "Basculegion (Female)",
+    "types": [
+      "Water",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 195,
+      "atk": 112,
+      "def": 85,
+      "spa": 120,
+      "spd": 95,
+      "spe": 98
+    },
+    "bst": 705,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/XgilENALPySbZX3jFD_eL-160x160.png",
+    "sprite": "sprites/basculegion-female.png"
+  },
+  {
+    "id": "bastiodon",
+    "name": "Bastiodon",
+    "types": [
+      "Rock",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 72,
+      "def": 188,
+      "spa": 67,
+      "spd": 158,
+      "spe": 50
+    },
+    "bst": 670,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/r9E9olb2qW_Ol_CzqQkl9-160x160.png",
+    "sprite": "sprites/bastiodon.png"
+  },
+  {
+    "id": "baxcalibur",
+    "name": "Baxcalibur",
+    "types": [
+      "Dragon",
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 190,
+      "atk": 165,
+      "def": 112,
+      "spa": 95,
+      "spd": 106,
+      "spe": 107
+    },
+    "bst": 775,
+    "usage": 4.6,
+    "art": "https://img.pokebase.app/pokemon-champions/KoNOip1oI5Mlt8Gp_6Sln-160x160.png",
+    "sprite": "sprites/baxcalibur.png"
+  },
+  {
+    "id": "beartic",
+    "name": "Beartic",
+    "types": [
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 150,
+      "def": 100,
+      "spa": 90,
+      "spd": 100,
+      "spe": 70
+    },
+    "bst": 680,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/uddePMmXck6J0u6UuJGkg-160x160.png",
+    "sprite": "sprites/beartic.png"
+  },
+  {
+    "id": "beedrill",
+    "name": "Beedrill",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 110,
+      "def": 60,
+      "spa": 65,
+      "spd": 100,
+      "spe": 95
+    },
+    "bst": 570,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/i5SUz94BZeSIDWynJoKdL-160x160.png",
+    "sprite": "sprites/beedrill.png"
+  },
+  {
+    "id": "bellibolt",
+    "name": "Bellibolt",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 184,
+      "atk": 84,
+      "def": 111,
+      "spa": 123,
+      "spd": 103,
+      "spe": 65
+    },
+    "bst": 670,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/e0x-ATub64o1nLWllpmlL-160x160.png",
+    "sprite": "sprites/bellibolt.png"
+  },
+  {
+    "id": "blastoise",
+    "name": "Blastoise",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 154,
+      "atk": 103,
+      "def": 120,
+      "spa": 105,
+      "spd": 125,
+      "spe": 98
+    },
+    "bst": 705,
+    "usage": 2.5,
+    "art": "https://img.pokebase.app/pokemon-champions/b304EiTs3d7K-Z-pnCHWA-160x160.png",
+    "sprite": "sprites/blastoise.png"
+  },
+  {
+    "id": "blaziken",
+    "name": "Blaziken",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 140,
+      "def": 90,
+      "spa": 130,
+      "spd": 90,
+      "spe": 100
+    },
+    "bst": 705,
+    "usage": 1.6,
+    "art": "https://img.pokebase.app/pokemon-champions/YEOTjQSNoWyOITM-foS3a-160x160.png",
+    "sprite": "sprites/blaziken.png"
+  },
+  {
+    "id": "camerupt",
+    "name": "Camerupt",
+    "types": [
+      "Fire",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 120,
+      "def": 90,
+      "spa": 125,
+      "spd": 95,
+      "spe": 60
+    },
+    "bst": 635,
+    "usage": 2.3,
+    "art": "https://img.pokebase.app/pokemon-champions/qQz0JfI6KTQ8g-niem3WJ-160x160.png",
+    "sprite": "sprites/camerupt.png"
+  },
+  {
+    "id": "castform",
+    "name": "Castform",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 90,
+      "def": 90,
+      "spa": 90,
+      "spd": 90,
+      "spe": 90
+    },
+    "bst": 595,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/iY4i-RbbTmrqi-18VyIJa-160x160.png",
+    "sprite": "sprites/castform.png"
+  },
+  {
+    "id": "ceruledge",
+    "name": "Ceruledge",
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 145,
+      "def": 100,
+      "spa": 80,
+      "spd": 120,
+      "spe": 105
+    },
+    "bst": 700,
+    "usage": 1.4,
+    "art": "https://img.pokebase.app/pokemon-champions/RyFh0j0hEgsrs2whWGxUF-160x160.png",
+    "sprite": "sprites/ceruledge.png"
+  },
+  {
+    "id": "chandelure",
+    "name": "Chandelure",
+    "types": [
+      "Ghost",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 75,
+      "def": 110,
+      "spa": 165,
+      "spd": 110,
+      "spe": 100
+    },
+    "bst": 695,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/tuiQO3Qw0nhr4D8hY3oQH-160x160.png",
+    "sprite": "sprites/chandelure.png"
+  },
+  {
+    "id": "charizard",
+    "name": "Charizard",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 104,
+      "def": 98,
+      "spa": 129,
+      "spd": 105,
+      "spe": 120
+    },
+    "bst": 709,
+    "usage": 10,
+    "art": "https://img.pokebase.app/pokemon-champions/-OOVWtKZ6FalBkrIuFJAH-160x160.png",
+    "sprite": "sprites/charizard.png"
+  },
+  {
+    "id": "chesnaught",
+    "name": "Chesnaught",
+    "types": [
+      "Grass",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 163,
+      "atk": 127,
+      "def": 142,
+      "spa": 94,
+      "spd": 95,
+      "spe": 84
+    },
+    "bst": 705,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/X2i-PZTvqomg0OFV_ZqBx-160x160.png",
+    "sprite": "sprites/chesnaught.png"
+  },
+  {
+    "id": "chimecho",
+    "name": "Chimecho",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 70,
+      "def": 100,
+      "spa": 115,
+      "spd": 110,
+      "spe": 85
+    },
+    "bst": 630,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/CMedWuqUfzxQ3fDULAbco-160x160.png",
+    "sprite": "sprites/chimecho.png"
+  },
+  {
+    "id": "cinderace",
+    "name": "Cinderace",
+    "types": [
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 136,
+      "def": 95,
+      "spa": 85,
+      "spd": 95,
+      "spe": 139
+    },
+    "bst": 705,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/_w0y-hkwWzrnHnoF-qli7-160x160.png",
+    "sprite": "sprites/cinderace.png"
+  },
+  {
+    "id": "clawitzer",
+    "name": "Clawitzer",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 146,
+      "atk": 93,
+      "def": 108,
+      "spa": 140,
+      "spd": 109,
+      "spe": 79
+    },
+    "bst": 675,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/4KVYyChPU5Ex5t5Kkp1tp-160x160.png",
+    "sprite": "sprites/clawitzer.png"
+  },
+  {
+    "id": "clefable",
+    "name": "Clefable",
+    "types": [
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 90,
+      "def": 93,
+      "spa": 115,
+      "spd": 110,
+      "spe": 80
+    },
+    "bst": 658,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/C2JdLKPXGolDQPlwIBvyb-160x160.png",
+    "sprite": "sprites/clefable.png"
+  },
+  {
+    "id": "cofagrigus",
+    "name": "Cofagrigus",
+    "types": [
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 70,
+      "def": 165,
+      "spa": 115,
+      "spd": 125,
+      "spe": 50
+    },
+    "bst": 658,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/JXMdTXoP0ZfpdnLfe0mgN-160x160.png",
+    "sprite": "sprites/cofagrigus.png"
+  },
+  {
+    "id": "conkeldurr",
+    "name": "Conkeldurr",
+    "types": [
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 180,
+      "atk": 160,
+      "def": 115,
+      "spa": 75,
+      "spd": 85,
+      "spe": 65
+    },
+    "bst": 680,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/akKIRSVHfejfiyJBTlFmj-160x160.png",
+    "sprite": "sprites/conkeldurr.png"
+  },
+  {
+    "id": "corviknight",
+    "name": "Corviknight",
+    "types": [
+      "Flying",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 173,
+      "atk": 107,
+      "def": 125,
+      "spa": 73,
+      "spd": 105,
+      "spe": 87
+    },
+    "bst": 670,
+    "usage": 1.2,
+    "art": "https://img.pokebase.app/pokemon-champions/e_1RUwMMsHtj52dWxgkRY-160x160.png",
+    "sprite": "sprites/corviknight.png"
+  },
+  {
+    "id": "crabominable",
+    "name": "Crabominable",
+    "types": [
+      "Fighting",
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 172,
+      "atk": 152,
+      "def": 97,
+      "spa": 82,
+      "spd": 87,
+      "spe": 63
+    },
+    "bst": 653,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/aiVv_0ixddWd_t021WzSU-160x160.png",
+    "sprite": "sprites/crabominable.png"
+  },
+  {
+    "id": "decidueye",
+    "name": "Decidueye",
+    "types": [
+      "Grass",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 127,
+      "def": 95,
+      "spa": 120,
+      "spd": 120,
+      "spe": 90
+    },
+    "bst": 705,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/8Anx3ctcij7WOLp75xxJZ-160x160.png",
+    "sprite": "sprites/decidueye.png"
+  },
+  {
+    "id": "dedenne",
+    "name": "Dedenne",
+    "types": [
+      "Electric",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 142,
+      "atk": 78,
+      "def": 77,
+      "spa": 101,
+      "spd": 87,
+      "spe": 121
+    },
+    "bst": 606,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/kCtKyWidckSKTW6g8DMic-160x160.png",
+    "sprite": "sprites/dedenne.png"
+  },
+  {
+    "id": "delphox",
+    "name": "Delphox",
+    "types": [
+      "Fire",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 89,
+      "def": 92,
+      "spa": 134,
+      "spd": 120,
+      "spe": 124
+    },
+    "bst": 709,
+    "usage": 2.9,
+    "art": "https://img.pokebase.app/pokemon-champions/WiPK4MsJLNe4_E4IHwuar-160x160.png",
+    "sprite": "sprites/delphox.png"
+  },
+  {
+    "id": "diggersby",
+    "name": "Diggersby",
+    "types": [
+      "Normal",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 76,
+      "def": 97,
+      "spa": 70,
+      "spd": 97,
+      "spe": 98
+    },
+    "bst": 598,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/_hL_o5Yq1jBQ1yLbtd_A4-160x160.png",
+    "sprite": "sprites/diggersby.png"
+  },
+  {
+    "id": "ditto",
+    "name": "Ditto",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 123,
+      "atk": 68,
+      "def": 68,
+      "spa": 68,
+      "spd": 68,
+      "spe": 68
+    },
+    "bst": 463,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/RUKVpVumh1lSckJieoza0-160x160.png",
+    "sprite": "sprites/ditto.png"
+  },
+  {
+    "id": "dragalge",
+    "name": "Dragalge",
+    "types": [
+      "Poison",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 95,
+      "def": 110,
+      "spa": 117,
+      "spd": 143,
+      "spe": 64
+    },
+    "bst": 669,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/SFVurFYxyPUU-glgt__xu-160x160.png",
+    "sprite": "sprites/dragalge.png"
+  },
+  {
+    "id": "dragapult",
+    "name": "Dragapult",
+    "types": [
+      "Dragon",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 163,
+      "atk": 140,
+      "def": 95,
+      "spa": 120,
+      "spd": 95,
+      "spe": 162
+    },
+    "bst": 775,
+    "usage": 0.8,
+    "art": "https://img.pokebase.app/pokemon-champions/TXPCpylGX5Je1ew_1Vd2f-160x160.png",
+    "sprite": "sprites/dragapult.png"
+  },
+  {
+    "id": "dragonite",
+    "name": "Dragonite",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 166,
+      "atk": 154,
+      "def": 115,
+      "spa": 120,
+      "spd": 120,
+      "spe": 100
+    },
+    "bst": 775,
+    "usage": 3.3,
+    "art": "https://img.pokebase.app/pokemon-champions/xnBECJmacxRrngCWXIdQ9-160x160.png",
+    "sprite": "sprites/dragonite.png"
+  },
+  {
+    "id": "drampa",
+    "name": "Drampa",
+    "types": [
+      "Normal",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 80,
+      "def": 105,
+      "spa": 155,
+      "spd": 111,
+      "spe": 56
+    },
+    "bst": 660,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/Z2hCledPBDjy_4f1NdR9d-160x160.png",
+    "sprite": "sprites/drampa.png"
+  },
+  {
+    "id": "eelektross",
+    "name": "Eelektross",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 135,
+      "def": 100,
+      "spa": 125,
+      "spd": 100,
+      "spe": 70
+    },
+    "bst": 690,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/cdJ6M9Sdlvmq3qSd-CHXZ-160x160.png",
+    "sprite": "sprites/eelektross.png"
+  },
+  {
+    "id": "emboar",
+    "name": "Emboar",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 185,
+      "atk": 143,
+      "def": 85,
+      "spa": 120,
+      "spd": 85,
+      "spe": 85
+    },
+    "bst": 703,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/zbWGhrPm_o0RCDR_dBqIu-160x160.png",
+    "sprite": "sprites/emboar.png"
+  },
+  {
+    "id": "emolga",
+    "name": "Emolga",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 95,
+      "def": 80,
+      "spa": 95,
+      "spd": 80,
+      "spe": 123
+    },
+    "bst": 603,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/5DjIfAxrnf2NpH9Ns-yJU-160x160.png",
+    "sprite": "sprites/emolga.png"
+  },
+  {
+    "id": "empoleon",
+    "name": "Empoleon",
+    "types": [
+      "Water",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 159,
+      "atk": 106,
+      "def": 108,
+      "spa": 131,
+      "spd": 121,
+      "spe": 80
+    },
+    "bst": 705,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/659N5h1_ghO6cRn4oq4-l-160x160.png",
+    "sprite": "sprites/empoleon.png"
+  },
+  {
+    "id": "espathra",
+    "name": "Espathra",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 80,
+      "def": 80,
+      "spa": 121,
+      "spd": 80,
+      "spe": 125
+    },
+    "bst": 656,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/303TuKLvIi7wi8G-bQ9L--160x160.png",
+    "sprite": "sprites/espathra.png"
+  },
+  {
+    "id": "espeon",
+    "name": "Espeon",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 85,
+      "def": 80,
+      "spa": 150,
+      "spd": 115,
+      "spe": 130
+    },
+    "bst": 700,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/-K3C4sN-ZcS4ugBVkZyeY-160x160.png",
+    "sprite": "sprites/espeon.png"
+  },
+  {
+    "id": "excadrill",
+    "name": "Excadrill",
+    "types": [
+      "Ground",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 185,
+      "atk": 155,
+      "def": 80,
+      "spa": 70,
+      "spd": 85,
+      "spe": 108
+    },
+    "bst": 683,
+    "usage": 6.1,
+    "art": "https://img.pokebase.app/pokemon-champions/GNl0kjv4pUYH9wyogr4tZ-160x160.png",
+    "sprite": "sprites/excadrill.png"
+  },
+  {
+    "id": "falinks",
+    "name": "Falinks",
+    "types": [
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 120,
+      "def": 120,
+      "spa": 90,
+      "spd": 80,
+      "spe": 95
+    },
+    "bst": 645,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/iNBu-6RGEopEb3P7JOjQ7-160x160.png",
+    "sprite": "sprites/falinks.png"
+  },
+  {
+    "id": "rotom-fan",
+    "name": "Fan Rotom",
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 85,
+      "def": 127,
+      "spa": 125,
+      "spd": 127,
+      "spe": 106
+    },
+    "bst": 695,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/BVKE0X2YxlQo_5wwOwQ2k-160x160.png",
+    "sprite": "sprites/rotom-fan.png"
+  },
+  {
+    "id": "farfetchd",
+    "name": "Farfetch’d",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 127,
+      "atk": 110,
+      "def": 75,
+      "spa": 78,
+      "spd": 82,
+      "spe": 80
+    },
+    "bst": 552,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/JNIjvbFlE-8mzBYzc3OeB-160x160.png",
+    "sprite": "sprites/farfetchd.png"
+  },
+  {
+    "id": "farigiraf",
+    "name": "Farigiraf",
+    "types": [
+      "Normal",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 195,
+      "atk": 110,
+      "def": 90,
+      "spa": 130,
+      "spd": 90,
+      "spe": 80
+    },
+    "bst": 695,
+    "usage": 14.7,
+    "art": "https://img.pokebase.app/pokemon-champions/Pn-pj8sZWVOzimonjrsr2-160x160.png",
+    "sprite": "sprites/farigiraf.png"
+  },
+  {
+    "id": "feraligatr",
+    "name": "Feraligatr",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 125,
+      "def": 120,
+      "spa": 99,
+      "spd": 103,
+      "spe": 98
+    },
+    "bst": 705,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/1xj1Z5fVnEpO7zhnt0Lmo-160x160.png",
+    "sprite": "sprites/feraligatr.png"
+  },
+  {
+    "id": "flapple",
+    "name": "Flapple",
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 130,
+      "def": 100,
+      "spa": 115,
+      "spd": 80,
+      "spe": 90
+    },
+    "bst": 660,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/6HsBZaBkOYlsulcRwcelf-160x160.png",
+    "sprite": "sprites/flapple.png"
+  },
+  {
+    "id": "flareon",
+    "name": "Flareon",
+    "types": [
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 150,
+      "def": 80,
+      "spa": 115,
+      "spd": 130,
+      "spe": 85
+    },
+    "bst": 700,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/ehq0YN_5X119tmT3vjl_v-160x160.png",
+    "sprite": "sprites/flareon.png"
+  },
+  {
+    "id": "floette",
+    "name": "Floette",
+    "types": [
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 129,
+      "atk": 65,
+      "def": 67,
+      "spa": 95,
+      "spd": 118,
+      "spe": 72
+    },
+    "bst": 546,
+    "usage": 1.3,
+    "art": "https://img.pokebase.app/pokemon-champions/EPfV82hf-Dj8JjmYyF4D8-160x160.png",
+    "sprite": "sprites/floette.png"
+  },
+  {
+    "id": "florges",
+    "name": "Florges",
+    "types": [
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 85,
+      "def": 88,
+      "spa": 132,
+      "spd": 174,
+      "spe": 95
+    },
+    "bst": 727,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/XxUlaMeM33mTLrsduRzWN-160x160.png",
+    "sprite": "sprites/florges.png"
+  },
+  {
+    "id": "forretress",
+    "name": "Forretress",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 110,
+      "def": 160,
+      "spa": 80,
+      "spd": 80,
+      "spe": 60
+    },
+    "bst": 640,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/jmpGGWNLSUBUzmklzo_M--160x160.png",
+    "sprite": "sprites/forretress.png"
+  },
+  {
+    "id": "froslass",
+    "name": "Froslass",
+    "types": [
+      "Ice",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 100,
+      "def": 90,
+      "spa": 100,
+      "spd": 90,
+      "spe": 130
+    },
+    "bst": 655,
+    "usage": 5.5,
+    "art": "https://img.pokebase.app/pokemon-champions/jUE9pabVF-VyGkGlESeTY-160x160.png",
+    "sprite": "sprites/froslass.png"
+  },
+  {
+    "id": "rotom-frost",
+    "name": "Frost Rotom",
+    "types": [
+      "Electric",
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 85,
+      "def": 127,
+      "spa": 125,
+      "spd": 127,
+      "spe": 106
+    },
+    "bst": 695,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/yyRgBrAL1nP5waCCRluby-160x160.png",
+    "sprite": "sprites/rotom-frost.png"
+  },
+  {
+    "id": "furfrou",
+    "name": "Furfrou",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 100,
+      "def": 80,
+      "spa": 85,
+      "spd": 110,
+      "spe": 122
+    },
+    "bst": 647,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/R-YkYMTMyR-iEfHxOZ-Or-160x160.png",
+    "sprite": "sprites/furfrou.png"
+  },
+  {
+    "id": "slowbro-galar",
+    "name": "Galarian Slowbro",
+    "types": [
+      "Poison",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 120,
+      "def": 115,
+      "spa": 120,
+      "spd": 90,
+      "spe": 50
+    },
+    "bst": 665,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/_DK4nMY_0h2T335ev8Hjh-160x160.png",
+    "sprite": "sprites/slowbro-galar.png"
+  },
+  {
+    "id": "slowking-galar",
+    "name": "Galarian Slowking",
+    "types": [
+      "Poison",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 85,
+      "def": 100,
+      "spa": 130,
+      "spd": 130,
+      "spe": 50
+    },
+    "bst": 665,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/ELTH6aa9ifmogCVFPPCq2-160x160.png",
+    "sprite": "sprites/slowking-galar.png"
+  },
+  {
+    "id": "stunfisk-galar",
+    "name": "Galarian Stunfisk",
+    "types": [
+      "Ground",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 184,
+      "atk": 101,
+      "def": 119,
+      "spa": 86,
+      "spd": 104,
+      "spe": 52
+    },
+    "bst": 646,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/AmqkkSfLEjeuVKT7imQDL-160x160.png",
+    "sprite": "sprites/stunfisk-galar.png"
+  },
+  {
+    "id": "gallade",
+    "name": "Gallade",
+    "types": [
+      "Psychic",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 143,
+      "atk": 145,
+      "def": 85,
+      "spa": 85,
+      "spd": 135,
+      "spe": 100
+    },
+    "bst": 693,
+    "usage": 1.4,
+    "art": "https://img.pokebase.app/pokemon-champions/P3Yi96mm14eIEA_jjJ-Q6-160x160.png",
+    "sprite": "sprites/gallade.png"
+  },
+  {
+    "id": "garbodor",
+    "name": "Garbodor",
+    "types": [
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 115,
+      "def": 102,
+      "spa": 80,
+      "spd": 102,
+      "spe": 95
+    },
+    "bst": 649,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/VKb7gnqnKnHOGwZwA2BFm-160x160.png",
+    "sprite": "sprites/garbodor.png"
+  },
+  {
+    "id": "garchomp",
+    "name": "Garchomp",
+    "types": [
+      "Dragon",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 183,
+      "atk": 150,
+      "def": 115,
+      "spa": 100,
+      "spd": 105,
+      "spe": 122
+    },
+    "bst": 775,
+    "usage": 13.5,
+    "art": "https://img.pokebase.app/pokemon-champions/5AfzeqXOVAFsGDzEXM5vP-160x160.png",
+    "sprite": "sprites/garchomp.png"
+  },
+  {
+    "id": "gardevoir",
+    "name": "Gardevoir",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 143,
+      "atk": 85,
+      "def": 85,
+      "spa": 145,
+      "spd": 135,
+      "spe": 100
+    },
+    "bst": 693,
+    "usage": 8.6,
+    "art": "https://img.pokebase.app/pokemon-champions/JZwrbcqEF_jjpLSAmE3UF-160x160.png",
+    "sprite": "sprites/gardevoir.png"
+  },
+  {
+    "id": "garganacl",
+    "name": "Garganacl",
+    "types": [
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 120,
+      "def": 150,
+      "spa": 65,
+      "spd": 110,
+      "spe": 55
+    },
+    "bst": 675,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/Zwm9dsBA-R5NTGoNu2e_X-160x160.png",
+    "sprite": "sprites/garganacl.png"
+  },
+  {
+    "id": "gengar",
+    "name": "Gengar",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 85,
+      "def": 80,
+      "spa": 150,
+      "spd": 95,
+      "spe": 130
+    },
+    "bst": 675,
+    "usage": 3.5,
+    "art": "https://img.pokebase.app/pokemon-champions/QyYGwmOWRE8cm_UpKeLnw-160x160.png",
+    "sprite": "sprites/gengar.png"
+  },
+  {
+    "id": "gholdengo",
+    "name": "Gholdengo",
+    "types": [
+      "Steel",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 162,
+      "atk": 80,
+      "def": 115,
+      "spa": 153,
+      "spd": 111,
+      "spe": 104
+    },
+    "bst": 725,
+    "usage": 18.1,
+    "art": "https://img.pokebase.app/pokemon-champions/dh8QY3HkvJf6n9XwXE9lM-160x160.png",
+    "sprite": "sprites/gholdengo.png"
+  },
+  {
+    "id": "glaceon",
+    "name": "Glaceon",
+    "types": [
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 80,
+      "def": 130,
+      "spa": 150,
+      "spd": 115,
+      "spe": 85
+    },
+    "bst": 700,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/fbFv4qoyuwweaZih5n0bf-160x160.png",
+    "sprite": "sprites/glaceon.png"
+  },
+  {
+    "id": "glalie",
+    "name": "Glalie",
+    "types": [
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
+    },
+    "bst": 655,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/H8G-w1Fx_uQgo0jLZXi4H-160x160.png",
+    "sprite": "sprites/glalie.png"
+  },
+  {
+    "id": "glimmora",
+    "name": "Glimmora",
+    "types": [
+      "Rock",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 158,
+      "atk": 75,
+      "def": 110,
+      "spa": 150,
+      "spd": 101,
+      "spe": 106
+    },
+    "bst": 700,
+    "usage": 3,
+    "art": "https://img.pokebase.app/pokemon-champions/KAT_mkYkK6YTH8UrcQreb-160x160.png",
+    "sprite": "sprites/glimmora.png"
+  },
+  {
+    "id": "gliscor",
+    "name": "Gliscor",
+    "types": [
+      "Ground",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 115,
+      "def": 145,
+      "spa": 65,
+      "spd": 95,
+      "spe": 115
+    },
+    "bst": 685,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/zxbUqI5GLKsN44onh2Jxz-160x160.png",
+    "sprite": "sprites/gliscor.png"
+  },
+  {
+    "id": "gogoat",
+    "name": "Gogoat",
+    "types": [
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 198,
+      "atk": 120,
+      "def": 82,
+      "spa": 117,
+      "spd": 101,
+      "spe": 88
+    },
+    "bst": 706,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/m3tCWAIR2_Ye0TkZP6SC2-160x160.png",
+    "sprite": "sprites/gogoat.png"
+  },
+  {
+    "id": "golisopod",
+    "name": "Golisopod",
+    "types": [
+      "Bug",
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 145,
+      "def": 160,
+      "spa": 80,
+      "spd": 110,
+      "spe": 60
+    },
+    "bst": 705,
+    "usage": 17.2,
+    "art": "https://img.pokebase.app/pokemon-champions/xDEqFsAlC3MkRw_s7rAIO-160x160.png",
+    "sprite": "sprites/golisopod.png"
+  },
+  {
+    "id": "golurk",
+    "name": "Golurk",
+    "types": [
+      "Ground",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 164,
+      "atk": 144,
+      "def": 100,
+      "spa": 75,
+      "spd": 100,
+      "spe": 75
+    },
+    "bst": 658,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/1yjzzGM_7zX5yTtWh_JER-160x160.png",
+    "sprite": "sprites/golurk.png"
+  },
+  {
+    "id": "goodra",
+    "name": "Goodra",
+    "types": [
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 120,
+      "def": 90,
+      "spa": 130,
+      "spd": 170,
+      "spe": 100
+    },
+    "bst": 775,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/Sk2sguvtz_0T4a6lriyin-160x160.png",
+    "sprite": "sprites/goodra.png"
+  },
+  {
+    "id": "gourgeist",
+    "name": "Gourgeist",
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 110,
+      "def": 142,
+      "spa": 78,
+      "spd": 95,
+      "spe": 104
+    },
+    "bst": 669,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/lnqhwGNIg3pvj-_bzsafH-160x160.png",
+    "sprite": "sprites/gourgeist.png"
+  },
+  {
+    "id": "grapploct",
+    "name": "Grapploct",
+    "types": [
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 138,
+      "def": 110,
+      "spa": 90,
+      "spd": 100,
+      "spe": 62
+    },
+    "bst": 655,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/Yo7nKIiEd5aiw2Ur21son-160x160.png",
+    "sprite": "sprites/grapploct.png"
+  },
+  {
+    "id": "greninja",
+    "name": "Greninja",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 147,
+      "atk": 115,
+      "def": 87,
+      "spa": 123,
+      "spd": 91,
+      "spe": 142
+    },
+    "bst": 705,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/yswOgtE045OpagqEZkIXe-160x160.png",
+    "sprite": "sprites/greninja.png"
+  },
+  {
+    "id": "grimmsnarl",
+    "name": "Grimmsnarl",
+    "types": [
+      "Dark",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 140,
+      "def": 85,
+      "spa": 115,
+      "spd": 95,
+      "spe": 80
+    },
+    "bst": 685,
+    "usage": 4.7,
+    "art": "https://img.pokebase.app/pokemon-champions/9sAQW2SdLsUzCZmNgK1ky-160x160.png",
+    "sprite": "sprites/grimmsnarl.png"
+  },
+  {
+    "id": "gyarados",
+    "name": "Gyarados",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 145,
+      "def": 99,
+      "spa": 80,
+      "spd": 120,
+      "spe": 101
+    },
+    "bst": 715,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/kXupw6ciQvkFGMSH7GbnG-160x160.png",
+    "sprite": "sprites/gyarados.png"
+  },
+  {
+    "id": "hatterene",
+    "name": "Hatterene",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 132,
+      "atk": 110,
+      "def": 115,
+      "spa": 156,
+      "spd": 123,
+      "spe": 49
+    },
+    "bst": 685,
+    "usage": 4.1,
+    "art": "https://img.pokebase.app/pokemon-champions/1aATW1uYZQY1sVxZ1noHp-160x160.png",
+    "sprite": "sprites/hatterene.png"
+  },
+  {
+    "id": "hawlucha",
+    "name": "Hawlucha",
+    "types": [
+      "Fighting",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 112,
+      "def": 95,
+      "spa": 94,
+      "spd": 83,
+      "spe": 138
+    },
+    "bst": 675,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/zluFZIMip6e5tViKM0UtM-160x160.png",
+    "sprite": "sprites/hawlucha.png"
+  },
+  {
+    "id": "rotom-heat",
+    "name": "Heat Rotom",
+    "types": [
+      "Electric",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 85,
+      "def": 127,
+      "spa": 125,
+      "spd": 127,
+      "spe": 106
+    },
+    "bst": 695,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/uACMr_es7TijZi3AGAb-o-160x160.png",
+    "sprite": "sprites/rotom-heat.png"
+  },
+  {
+    "id": "heliolisk",
+    "name": "Heliolisk",
+    "types": [
+      "Electric",
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 137,
+      "atk": 75,
+      "def": 72,
+      "spa": 129,
+      "spd": 114,
+      "spe": 129
+    },
+    "bst": 656,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/vgJtQT1sa-cAdrT2NJiBf-160x160.png",
+    "sprite": "sprites/heliolisk.png"
+  },
+  {
+    "id": "heracross",
+    "name": "Heracross",
+    "types": [
+      "Bug",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 145,
+      "def": 95,
+      "spa": 60,
+      "spd": 115,
+      "spe": 105
+    },
+    "bst": 675,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/MhYoNtqFIDNF9Jc3BcKmD-160x160.png",
+    "sprite": "sprites/heracross.png"
+  },
+  {
+    "id": "hippowdon",
+    "name": "Hippowdon",
+    "types": [
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 183,
+      "atk": 132,
+      "def": 138,
+      "spa": 88,
+      "spd": 92,
+      "spe": 67
+    },
+    "bst": 700,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/SHpbZvTLFg_UfDOecIUCR-160x160.png",
+    "sprite": "sprites/hippowdon.png"
+  },
+  {
+    "id": "arcanine-hisui",
+    "name": "Hisuian Arcanine",
+    "types": [
+      "Fire",
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 135,
+      "def": 100,
+      "spa": 115,
+      "spd": 100,
+      "spe": 110
+    },
+    "bst": 730,
+    "usage": 13.2,
+    "art": "https://img.pokebase.app/pokemon-champions/g8I-Bxg0mSwSljrbvmjK--160x160.png",
+    "sprite": "sprites/arcanine-hisui.png"
+  },
+  {
+    "id": "avalugg-hisui",
+    "name": "Hisuian Avalugg",
+    "types": [
+      "Ice",
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 147,
+      "def": 204,
+      "spa": 54,
+      "spd": 56,
+      "spe": 58
+    },
+    "bst": 689,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/XINhzo-NUBhpY1Fbrkd44-160x160.png",
+    "sprite": "sprites/avalugg-hisui.png"
+  },
+  {
+    "id": "decidueye-hisui",
+    "name": "Hisuian Decidueye",
+    "types": [
+      "Grass",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 163,
+      "atk": 132,
+      "def": 100,
+      "spa": 115,
+      "spd": 115,
+      "spe": 80
+    },
+    "bst": 705,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/G7qHsTPL7NvkBib7q5Qqi-160x160.png",
+    "sprite": "sprites/decidueye-hisui.png"
+  },
+  {
+    "id": "goodra-hisui",
+    "name": "Hisuian Goodra",
+    "types": [
+      "Steel",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 120,
+      "def": 120,
+      "spa": 130,
+      "spd": 170,
+      "spe": 80
+    },
+    "bst": 775,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/_M5K8qN1u1c0C0WyC6yYI-160x160.png",
+    "sprite": "sprites/goodra-hisui.png"
+  },
+  {
+    "id": "samurott-hisui",
+    "name": "Hisuian Samurott",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 128,
+      "def": 100,
+      "spa": 120,
+      "spd": 85,
+      "spe": 105
+    },
+    "bst": 703,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/aJBUjeBrp11xm9pggCj5d-160x160.png",
+    "sprite": "sprites/samurott-hisui.png"
+  },
+  {
+    "id": "typhlosion-hisui",
+    "name": "Hisuian Typhlosion",
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 148,
+      "atk": 104,
+      "def": 98,
+      "spa": 139,
+      "spd": 105,
+      "spe": 115
+    },
+    "bst": 709,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/gO4ASjSQ64D_hh4pt6AKu-160x160.png",
+    "sprite": "sprites/typhlosion-hisui.png"
+  },
+  {
+    "id": "zoroark-hisui",
+    "name": "Hisuian Zoroark",
+    "types": [
+      "Normal",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 120,
+      "def": 80,
+      "spa": 145,
+      "spd": 80,
+      "spe": 130
+    },
+    "bst": 685,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/qJ1PtgoM2TJo6nJCY1pi5-160x160.png",
+    "sprite": "sprites/zoroark-hisui.png"
+  },
+  {
+    "id": "houndoom",
+    "name": "Houndoom",
+    "types": [
+      "Dark",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 110,
+      "def": 70,
+      "spa": 130,
+      "spd": 100,
+      "spe": 115
+    },
+    "bst": 675,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/LAU6AX6nfzVVSqtM7-EdA-160x160.png",
+    "sprite": "sprites/houndoom.png"
+  },
+  {
+    "id": "houndstone",
+    "name": "Houndstone",
+    "types": [
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 147,
+      "atk": 121,
+      "def": 120,
+      "spa": 70,
+      "spd": 117,
+      "spe": 88
+    },
+    "bst": 663,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/rnNCl57IO7XZraOnUfbI7-160x160.png",
+    "sprite": "sprites/houndstone.png"
+  },
+  {
+    "id": "hydrapple",
+    "name": "Hydrapple",
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 181,
+      "atk": 100,
+      "def": 130,
+      "spa": 140,
+      "spd": 100,
+      "spe": 64
+    },
+    "bst": 715,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/7Fx3Ok2e_zkjxLMpWbetD-160x160.png",
+    "sprite": "sprites/hydrapple.png"
+  },
+  {
+    "id": "hydreigon",
+    "name": "Hydreigon",
+    "types": [
+      "Dark",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 167,
+      "atk": 125,
+      "def": 110,
+      "spa": 145,
+      "spd": 110,
+      "spe": 118
+    },
+    "bst": 775,
+    "usage": 1.7,
+    "art": "https://img.pokebase.app/pokemon-champions/Uds6RHVramHS747tA6iDR-160x160.png",
+    "sprite": "sprites/hydreigon.png"
+  },
+  {
+    "id": "incineroar",
+    "name": "Incineroar",
+    "types": [
+      "Fire",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 135,
+      "def": 110,
+      "spa": 100,
+      "spd": 110,
+      "spe": 80
+    },
+    "bst": 705,
+    "usage": 32.9,
+    "art": "https://img.pokebase.app/pokemon-champions/jfre2zZsVmcuIfNYD94We-160x160.png",
+    "sprite": "sprites/incineroar.png"
+  },
+  {
+    "id": "indeedee-female",
+    "name": "Indeedee (Female)",
+    "types": [
+      "Psychic",
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 75,
+      "def": 85,
+      "spa": 115,
+      "spd": 125,
+      "spe": 105
+    },
+    "bst": 650,
+    "usage": 18.3,
+    "art": "https://img.pokebase.app/pokemon-champions/I9Yx23xQlThSHL-FOopnD-160x160.png",
+    "sprite": "sprites/indeedee-female.png"
+  },
+  {
+    "id": "indeedee-male",
+    "name": "Indeedee (Male)",
+    "types": [
+      "Psychic",
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 85,
+      "def": 75,
+      "spa": 125,
+      "spd": 115,
+      "spe": 115
+    },
+    "bst": 650,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/rsB5qGp91w7WopflWuiSf-160x160.png",
+    "sprite": "sprites/indeedee-male.png"
+  },
+  {
+    "id": "infernape",
+    "name": "Infernape",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 151,
+      "atk": 124,
+      "def": 91,
+      "spa": 124,
+      "spd": 91,
+      "spe": 128
+    },
+    "bst": 709,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/4yBa4-KqaW9e0urCrZ2Et-160x160.png",
+    "sprite": "sprites/infernape.png"
+  },
+  {
+    "id": "inteleon",
+    "name": "Inteleon",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 105,
+      "def": 85,
+      "spa": 145,
+      "spd": 85,
+      "spe": 140
+    },
+    "bst": 705,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/RB039as_wBik731ssQsVs-160x160.png",
+    "sprite": "sprites/inteleon.png"
+  },
+  {
+    "id": "jolteon",
+    "name": "Jolteon",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 85,
+      "def": 80,
+      "spa": 130,
+      "spd": 115,
+      "spe": 150
+    },
+    "bst": 700,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/nG0GQXofUIG0aFZvdTiw9-160x160.png",
+    "sprite": "sprites/jolteon.png"
+  },
+  {
+    "id": "kangaskhan",
+    "name": "Kangaskhan",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 180,
+      "atk": 115,
+      "def": 100,
+      "spa": 60,
+      "spd": 100,
+      "spe": 110
+    },
+    "bst": 665,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/mzc6S9XmLNnCga-dtl1Rk-160x160.png",
+    "sprite": "sprites/kangaskhan.png"
+  },
+  {
+    "id": "kingambit",
+    "name": "Kingambit",
+    "types": [
+      "Dark",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 155,
+      "def": 140,
+      "spa": 80,
+      "spd": 105,
+      "spe": 70
+    },
+    "bst": 725,
+    "usage": 27.6,
+    "art": "https://img.pokebase.app/pokemon-champions/cbmuf9AN5rgWu6OZ3nxPd-160x160.png",
+    "sprite": "sprites/kingambit.png"
+  },
+  {
+    "id": "kleavor",
+    "name": "Kleavor",
+    "types": [
+      "Bug",
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 155,
+      "def": 115,
+      "spa": 65,
+      "spd": 90,
+      "spe": 105
+    },
+    "bst": 675,
+    "usage": 0.9,
+    "art": "https://img.pokebase.app/pokemon-champions/92Y3SIT_f1F4-DBCjXfYZ-160x160.png",
+    "sprite": "sprites/kleavor.png"
+  },
+  {
+    "id": "klefki",
+    "name": "Klefki",
+    "types": [
+      "Steel",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 132,
+      "atk": 100,
+      "def": 111,
+      "spa": 100,
+      "spd": 107,
+      "spe": 95
+    },
+    "bst": 645,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/-aG6nIy9SoNRd-ebabILR-160x160.png",
+    "sprite": "sprites/klefki.png"
+  },
+  {
+    "id": "kommo-o",
+    "name": "Kommo-o",
+    "types": [
+      "Dragon",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 130,
+      "def": 145,
+      "spa": 120,
+      "spd": 125,
+      "spe": 105
+    },
+    "bst": 775,
+    "usage": 1.4,
+    "art": "https://img.pokebase.app/pokemon-champions/c_xuHZv3ob4p8UXgy_ErY-160x160.png",
+    "sprite": "sprites/kommo-o.png"
+  },
+  {
+    "id": "krookodile",
+    "name": "Krookodile",
+    "types": [
+      "Ground",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 137,
+      "def": 100,
+      "spa": 85,
+      "spd": 90,
+      "spe": 112
+    },
+    "bst": 694,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/67dLAI9e5uuQfcy2tTCix-160x160.png",
+    "sprite": "sprites/krookodile.png"
+  },
+  {
+    "id": "leafeon",
+    "name": "Leafeon",
+    "types": [
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 130,
+      "def": 150,
+      "spa": 80,
+      "spd": 85,
+      "spe": 115
+    },
+    "bst": 700,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/8uzd48sUZu_7v42nHVDRv-160x160.png",
+    "sprite": "sprites/leafeon.png"
+  },
+  {
+    "id": "liepard",
+    "name": "Liepard",
+    "types": [
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 139,
+      "atk": 108,
+      "def": 70,
+      "spa": 108,
+      "spd": 70,
+      "spe": 126
+    },
+    "bst": 621,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/XkO0kR7P3vylqj7RfeI6a-160x160.png",
+    "sprite": "sprites/liepard.png"
+  },
+  {
+    "id": "lopunny",
+    "name": "Lopunny",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 96,
+      "def": 104,
+      "spa": 74,
+      "spd": 116,
+      "spe": 125
+    },
+    "bst": 655,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/NES-bQqDD0U8MosDYi8vv-160x160.png",
+    "sprite": "sprites/lopunny.png"
+  },
+  {
+    "id": "lucario",
+    "name": "Lucario",
+    "types": [
+      "Fighting",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 130,
+      "def": 90,
+      "spa": 135,
+      "spd": 90,
+      "spe": 110
+    },
+    "bst": 700,
+    "usage": 6.1,
+    "art": "https://img.pokebase.app/pokemon-champions/sNbWqyBUzO1rJGQt6aadF-160x160.png",
+    "sprite": "sprites/lucario.png"
+  },
+  {
+    "id": "luxray",
+    "name": "Luxray",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 140,
+      "def": 99,
+      "spa": 115,
+      "spd": 99,
+      "spe": 90
+    },
+    "bst": 698,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/vtu0JVFOET1a-jH48qRiP-160x160.png",
+    "sprite": "sprites/luxray.png"
+  },
+  {
+    "id": "lycanroc",
+    "name": "Lycanroc",
+    "types": [
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 135,
+      "def": 85,
+      "spa": 75,
+      "spd": 85,
+      "spe": 132
+    },
+    "bst": 662,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/CXyCgO1ioP4-0CvuOBvOj-160x160.png",
+    "sprite": "sprites/lycanroc.png"
+  },
+  {
+    "id": "lycanroc-dusk",
+    "name": "Lycanroc (Dusk)",
+    "types": [
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 137,
+      "def": 85,
+      "spa": 75,
+      "spd": 85,
+      "spe": 130
+    },
+    "bst": 662,
+    "usage": 1.3,
+    "art": "https://img.pokebase.app/pokemon-champions/nAup2lTNfAT4IQws_JPhE-160x160.png",
+    "sprite": "sprites/lycanroc-dusk.png"
+  },
+  {
+    "id": "lycanroc-midday",
+    "name": "Lycanroc (Midday)",
+    "types": [
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 135,
+      "def": 85,
+      "spa": 75,
+      "spd": 85,
+      "spe": 132
+    },
+    "bst": 662,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/qF2E0TtfD1_VXPx7VWVg3-160x160.png",
+    "sprite": "sprites/lycanroc-midday.png"
+  },
+  {
+    "id": "lycanroc-midnight",
+    "name": "Lycanroc (Midnight)",
+    "types": [
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 135,
+      "def": 95,
+      "spa": 75,
+      "spd": 95,
+      "spe": 102
+    },
+    "bst": 662,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/5e1nWZtfdoT9nAroj94Rr-160x160.png",
+    "sprite": "sprites/lycanroc-midnight.png"
+  },
+  {
+    "id": "mabosstiff",
+    "name": "Mabosstiff",
+    "types": [
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 140,
+      "def": 110,
+      "spa": 80,
+      "spd": 90,
+      "spe": 105
+    },
+    "bst": 680,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/UXO0MyDx1Njq7fFTv8hlc-160x160.png",
+    "sprite": "sprites/mabosstiff.png"
+  },
+  {
+    "id": "machamp",
+    "name": "Machamp",
+    "types": [
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 150,
+      "def": 100,
+      "spa": 85,
+      "spd": 105,
+      "spe": 75
+    },
+    "bst": 680,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/cmqeMK82BGoWz6CSCN_5s-160x160.png",
+    "sprite": "sprites/machamp.png"
+  },
+  {
+    "id": "malamar",
+    "name": "Malamar",
+    "types": [
+      "Dark",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 161,
+      "atk": 112,
+      "def": 108,
+      "spa": 88,
+      "spd": 95,
+      "spe": 93
+    },
+    "bst": 657,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/0pXTCuuEQUZfwfRNFqyMh-160x160.png",
+    "sprite": "sprites/malamar.png"
+  },
+  {
+    "id": "mamoswine",
+    "name": "Mamoswine",
+    "types": [
+      "Ice",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 185,
+      "atk": 150,
+      "def": 100,
+      "spa": 90,
+      "spd": 80,
+      "spe": 100
+    },
+    "bst": 705,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/KP5lmdEiWAB3maz26UzG_-160x160.png",
+    "sprite": "sprites/mamoswine.png"
+  },
+  {
+    "id": "manectric",
+    "name": "Manectric",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 95,
+      "def": 80,
+      "spa": 125,
+      "spd": 80,
+      "spe": 125
+    },
+    "bst": 650,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/nDPDktxjTu7AXuu4GxCUf-160x160.png",
+    "sprite": "sprites/manectric.png"
+  },
+  {
+    "id": "maushold",
+    "name": "Maushold",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 149,
+      "atk": 95,
+      "def": 90,
+      "spa": 85,
+      "spd": 95,
+      "spe": 131
+    },
+    "bst": 645,
+    "usage": 1.8,
+    "art": "https://img.pokebase.app/pokemon-champions/D4mo4Ai5GUgqaZZ_bGvUO-160x160.png",
+    "sprite": "sprites/maushold.png"
+  },
+  {
+    "id": "mawile",
+    "name": "Mawile",
+    "types": [
+      "Steel",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 105,
+      "def": 105,
+      "spa": 75,
+      "spd": 75,
+      "spe": 70
+    },
+    "bst": 555,
+    "usage": 2.2,
+    "art": "https://img.pokebase.app/pokemon-champions/kcFQtdhYWsBNSaV2MGTEG-160x160.png",
+    "sprite": "sprites/mawile.png"
+  },
+  {
+    "id": "medicham",
+    "name": "Medicham",
+    "types": [
+      "Fighting",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 80,
+      "def": 95,
+      "spa": 80,
+      "spd": 95,
+      "spe": 100
+    },
+    "bst": 585,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/8XUqLoAnVNf_Drd9uGW96-160x160.png",
+    "sprite": "sprites/medicham.png"
+  },
+  {
+    "id": "abomasnow-mega",
+    "name": "Mega Abomasnow",
+    "types": [
+      "Grass",
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 152,
+      "def": 125,
+      "spa": 152,
+      "spd": 125,
+      "spe": 50
+    },
+    "bst": 769,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/S7TYHR9D7kaJEg0cQ-MnP-160x160.png",
+    "sprite": "sprites/abomasnow-mega.png"
+  },
+  {
+    "id": "absol-mega",
+    "name": "Mega Absol",
+    "types": [
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 170,
+      "def": 80,
+      "spa": 135,
+      "spd": 80,
+      "spe": 135
+    },
+    "bst": 740,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/CRimbGT1QMirmnlPYkm-l-160x160.png",
+    "sprite": "sprites/absol-mega.png"
+  },
+  {
+    "id": "absol-mega-z",
+    "name": "Mega Absol Z",
+    "types": [
+      "Dark",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 174,
+      "def": 80,
+      "spa": 95,
+      "spd": 80,
+      "spe": 171
+    },
+    "bst": 740,
+    "usage": 2.1,
+    "art": "https://img.pokebase.app/pokemon-champions/8-9zF2oq8wl2ea8T9Z-Lc-160x160.png",
+    "sprite": "sprites/absol-mega-z.png"
+  },
+  {
+    "id": "aerodactyl-mega",
+    "name": "Mega Aerodactyl",
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 155,
+      "def": 105,
+      "spa": 90,
+      "spd": 115,
+      "spe": 170
+    },
+    "bst": 790,
+    "usage": 2.6,
+    "art": "https://img.pokebase.app/pokemon-champions/aq_zf-we0F-vYGNaiNxvJ-160x160.png",
+    "sprite": "sprites/aerodactyl-mega.png"
+  },
+  {
+    "id": "aggron-mega",
+    "name": "Mega Aggron",
+    "types": [
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 160,
+      "def": 250,
+      "spa": 80,
+      "spd": 100,
+      "spe": 70
+    },
+    "bst": 805,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/gnvWKhQAho8lARFqvEd8d-160x160.png",
+    "sprite": "sprites/aggron-mega.png"
+  },
+  {
+    "id": "alakazam-mega",
+    "name": "Mega Alakazam",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 70,
+      "def": 85,
+      "spa": 195,
+      "spd": 125,
+      "spe": 170
+    },
+    "bst": 775,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/9CMc9nssMKuY5Z2II3RzM-160x160.png",
+    "sprite": "sprites/alakazam-mega.png"
+  },
+  {
+    "id": "altaria-mega",
+    "name": "Mega Altaria",
+    "types": [
+      "Dragon",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 130,
+      "def": 130,
+      "spa": 130,
+      "spd": 125,
+      "spe": 100
+    },
+    "bst": 765,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/asXqYsgvQKXLq4BozrjXp-160x160.png",
+    "sprite": "sprites/altaria-mega.png"
+  },
+  {
+    "id": "ampharos-mega",
+    "name": "Mega Ampharos",
+    "types": [
+      "Electric",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 115,
+      "def": 125,
+      "spa": 185,
+      "spd": 130,
+      "spe": 65
+    },
+    "bst": 785,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/3iZrMK9yLuWYkJbNRJNgm-160x160.png",
+    "sprite": "sprites/ampharos-mega.png"
+  },
+  {
+    "id": "audino-mega",
+    "name": "Mega Audino",
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 178,
+      "atk": 80,
+      "def": 146,
+      "spa": 100,
+      "spd": 146,
+      "spe": 70
+    },
+    "bst": 720,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/md9Gi17bcAip84C91ZSf_-160x160.png",
+    "sprite": "sprites/audino-mega.png"
+  },
+  {
+    "id": "banette-mega",
+    "name": "Mega Banette",
+    "types": [
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 139,
+      "atk": 185,
+      "def": 95,
+      "spa": 113,
+      "spd": 103,
+      "spe": 95
+    },
+    "bst": 730,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/oeqaTSmEitE5kpH8m_xFK-160x160.png",
+    "sprite": "sprites/banette-mega.png"
+  },
+  {
+    "id": "barbaracle-mega",
+    "name": "Mega Barbaracle",
+    "types": [
+      "Rock",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 147,
+      "atk": 160,
+      "def": 150,
+      "spa": 84,
+      "spd": 126,
+      "spe": 108
+    },
+    "bst": 775,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/hMLSWNn_B6L5lhExUBgz3-160x160.png",
+    "sprite": "sprites/barbaracle-mega.png"
+  },
+  {
+    "id": "baxcalibur-mega",
+    "name": "Mega Baxcalibur",
+    "types": [
+      "Dragon",
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 190,
+      "atk": 195,
+      "def": 137,
+      "spa": 125,
+      "spd": 121,
+      "spe": 107
+    },
+    "bst": 875,
+    "usage": 3.9,
+    "art": "https://img.pokebase.app/pokemon-champions/DWHbe11uFUEIoGEI_aknK-160x160.png",
+    "sprite": "sprites/baxcalibur-mega.png"
+  },
+  {
+    "id": "beedrill-mega",
+    "name": "Mega Beedrill",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 170,
+      "def": 60,
+      "spa": 35,
+      "spd": 100,
+      "spe": 165
+    },
+    "bst": 670,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/vIUOtfZd2-FgE8PnnZihC-160x160.png",
+    "sprite": "sprites/beedrill-mega.png"
+  },
+  {
+    "id": "blastoise-mega",
+    "name": "Mega Blastoise",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 154,
+      "atk": 123,
+      "def": 140,
+      "spa": 155,
+      "spd": 135,
+      "spe": 98
+    },
+    "bst": 805,
+    "usage": 2.5,
+    "art": "https://img.pokebase.app/pokemon-champions/2TRBEXk5G_HDgFJIU-PVE-160x160.png",
+    "sprite": "sprites/blastoise-mega.png"
+  },
+  {
+    "id": "blaziken-mega",
+    "name": "Mega Blaziken",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 180,
+      "def": 100,
+      "spa": 150,
+      "spd": 100,
+      "spe": 120
+    },
+    "bst": 805,
+    "usage": 1.2,
+    "art": "https://img.pokebase.app/pokemon-champions/S2diQI4EbTy0EI1ShBhL2-160x160.png",
+    "sprite": "sprites/blaziken-mega.png"
+  },
+  {
+    "id": "camerupt-mega",
+    "name": "Mega Camerupt",
+    "types": [
+      "Fire",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 140,
+      "def": 120,
+      "spa": 165,
+      "spd": 125,
+      "spe": 40
+    },
+    "bst": 735,
+    "usage": 2.3,
+    "art": "https://img.pokebase.app/pokemon-champions/dhaPX8A2CtZaE4Ir2TCOF-160x160.png",
+    "sprite": "sprites/camerupt-mega.png"
+  },
+  {
+    "id": "chandelure-mega",
+    "name": "Mega Chandelure",
+    "types": [
+      "Ghost",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 95,
+      "def": 130,
+      "spa": 195,
+      "spd": 130,
+      "spe": 110
+    },
+    "bst": 795,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/jis-1r627dgeYHWjiEyHf-160x160.png",
+    "sprite": "sprites/chandelure-mega.png"
+  },
+  {
+    "id": "charizard-mega-x",
+    "name": "Mega Charizard X",
+    "types": [
+      "Fire",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 150,
+      "def": 131,
+      "spa": 150,
+      "spd": 105,
+      "spe": 120
+    },
+    "bst": 809,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/p6cIYoxjz0Xt9tL7Nk0XJ-160x160.png",
+    "sprite": "sprites/charizard-mega-x.png"
+  },
+  {
+    "id": "charizard-mega-y",
+    "name": "Mega Charizard Y",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 124,
+      "def": 98,
+      "spa": 179,
+      "spd": 135,
+      "spe": 120
+    },
+    "bst": 809,
+    "usage": 9.7,
+    "art": "https://img.pokebase.app/pokemon-champions/SPY-7ZBwMZrzl8WaTM1FM-160x160.png",
+    "sprite": "sprites/charizard-mega-y.png"
+  },
+  {
+    "id": "chesnaught-mega",
+    "name": "Mega Chesnaught",
+    "types": [
+      "Grass",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 163,
+      "atk": 157,
+      "def": 192,
+      "spa": 94,
+      "spd": 135,
+      "spe": 64
+    },
+    "bst": 805,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/p-iZFHQ76HvrlMGdttt9N-160x160.png",
+    "sprite": "sprites/chesnaught-mega.png"
+  },
+  {
+    "id": "chimecho-mega",
+    "name": "Mega Chimecho",
+    "types": [
+      "Psychic",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 70,
+      "def": 130,
+      "spa": 155,
+      "spd": 140,
+      "spe": 85
+    },
+    "bst": 730,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/6GpPt_a60Yxau1cYD6QQB-160x160.png",
+    "sprite": "sprites/chimecho-mega.png"
+  },
+  {
+    "id": "clefable-mega",
+    "name": "Mega Clefable",
+    "types": [
+      "Fairy",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 100,
+      "def": 113,
+      "spa": 155,
+      "spd": 130,
+      "spe": 90
+    },
+    "bst": 758,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/Qatxx2POPt890HT5ICOHO-160x160.png",
+    "sprite": "sprites/clefable-mega.png"
+  },
+  {
+    "id": "crabominable-mega",
+    "name": "Mega Crabominable",
+    "types": [
+      "Fighting",
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 172,
+      "atk": 177,
+      "def": 142,
+      "spa": 82,
+      "spd": 127,
+      "spe": 53
+    },
+    "bst": 753,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/JvmR6TP8gcapdurTdjaeP-160x160.png",
+    "sprite": "sprites/crabominable-mega.png"
+  },
+  {
+    "id": "delphox-mega",
+    "name": "Mega Delphox",
+    "types": [
+      "Fire",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 89,
+      "def": 92,
+      "spa": 179,
+      "spd": 145,
+      "spe": 154
+    },
+    "bst": 809,
+    "usage": 2.9,
+    "art": "https://img.pokebase.app/pokemon-champions/zQ8LJP4RvWxCGO7Z-2m-q-160x160.png",
+    "sprite": "sprites/delphox-mega.png"
+  },
+  {
+    "id": "dragalge-mega",
+    "name": "Mega Dragalge",
+    "types": [
+      "Poison",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 105,
+      "def": 125,
+      "spa": 152,
+      "spd": 183,
+      "spe": 64
+    },
+    "bst": 769,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/dtLN1voOym_EDAb4pArCL-160x160.png",
+    "sprite": "sprites/dragalge-mega.png"
+  },
+  {
+    "id": "dragonite-mega",
+    "name": "Mega Dragonite",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 166,
+      "atk": 144,
+      "def": 135,
+      "spa": 165,
+      "spd": 145,
+      "spe": 120
+    },
+    "bst": 875,
+    "usage": 2.4,
+    "art": "https://img.pokebase.app/pokemon-champions/wpwgReCuz_ZEMDTY5dIdb-160x160.png",
+    "sprite": "sprites/dragonite-mega.png"
+  },
+  {
+    "id": "drampa-mega",
+    "name": "Mega Drampa",
+    "types": [
+      "Normal",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 105,
+      "def": 130,
+      "spa": 180,
+      "spd": 136,
+      "spe": 56
+    },
+    "bst": 760,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/z4e4qy3cqt9WnpcWY2tbM-160x160.png",
+    "sprite": "sprites/drampa-mega.png"
+  },
+  {
+    "id": "eelektross-mega",
+    "name": "Mega Eelektross",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 165,
+      "def": 100,
+      "spa": 155,
+      "spd": 110,
+      "spe": 100
+    },
+    "bst": 790,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/SuQG7oht5j9rUROj9Jia7-160x160.png",
+    "sprite": "sprites/eelektross-mega.png"
+  },
+  {
+    "id": "emboar-mega",
+    "name": "Mega Emboar",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 185,
+      "atk": 168,
+      "def": 95,
+      "spa": 130,
+      "spd": 130,
+      "spe": 95
+    },
+    "bst": 803,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/wZnH3397Bwhrg4mlYk07_-160x160.png",
+    "sprite": "sprites/emboar-mega.png"
+  },
+  {
+    "id": "excadrill-mega",
+    "name": "Mega Excadrill",
+    "types": [
+      "Ground",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 185,
+      "atk": 185,
+      "def": 120,
+      "spa": 85,
+      "spd": 85,
+      "spe": 123
+    },
+    "bst": 783,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/el21cgR1bJabCEeSGgJlQ-160x160.png",
+    "sprite": "sprites/excadrill-mega.png"
+  },
+  {
+    "id": "falinks-mega",
+    "name": "Mega Falinks",
+    "types": [
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 155,
+      "def": 155,
+      "spa": 90,
+      "spd": 85,
+      "spe": 120
+    },
+    "bst": 745,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/I_Ho4_oFKk54Y8ovDze0E-160x160.png",
+    "sprite": "sprites/falinks-mega.png"
+  },
+  {
+    "id": "feraligatr-mega",
+    "name": "Mega Feraligatr",
+    "types": [
+      "Water",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 180,
+      "def": 145,
+      "spa": 109,
+      "spd": 113,
+      "spe": 98
+    },
+    "bst": 805,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/I6nDHBiGyw4B_ANb-q6aU-160x160.png",
+    "sprite": "sprites/feraligatr-mega.png"
+  },
+  {
+    "id": "floette-mega",
+    "name": "Mega Floette",
+    "types": [
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 149,
+      "atk": 105,
+      "def": 107,
+      "spa": 175,
+      "spd": 168,
+      "spe": 122
+    },
+    "bst": 826,
+    "usage": 1.5,
+    "art": "https://img.pokebase.app/pokemon-champions/-HMvQfwwFm7ympWvmiTV1-160x160.png",
+    "sprite": "sprites/floette-mega.png"
+  },
+  {
+    "id": "froslass-mega",
+    "name": "Mega Froslass",
+    "types": [
+      "Ice",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 100,
+      "def": 90,
+      "spa": 160,
+      "spd": 120,
+      "spe": 140
+    },
+    "bst": 755,
+    "usage": 5.5,
+    "art": "https://img.pokebase.app/pokemon-champions/_QrtRF98XZAMkaOVb1gSJ-160x160.png",
+    "sprite": "sprites/froslass-mega.png"
+  },
+  {
+    "id": "gallade-mega",
+    "name": "Mega Gallade",
+    "types": [
+      "Psychic",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 143,
+      "atk": 185,
+      "def": 115,
+      "spa": 85,
+      "spd": 135,
+      "spe": 130
+    },
+    "bst": 793,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/MVocjfEWJz09rqycAUtt8-160x160.png",
+    "sprite": "sprites/gallade-mega.png"
+  },
+  {
+    "id": "garchomp-mega",
+    "name": "Mega Garchomp",
+    "types": [
+      "Dragon",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 183,
+      "atk": 190,
+      "def": 135,
+      "spa": 140,
+      "spd": 115,
+      "spe": 112
+    },
+    "bst": 875,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/3tM81l3eAqD88qQndH9gi-160x160.png",
+    "sprite": "sprites/garchomp-mega.png"
+  },
+  {
+    "id": "garchomp-mega-z",
+    "name": "Mega Garchomp Z",
+    "types": [
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 183,
+      "atk": 150,
+      "def": 105,
+      "spa": 161,
+      "spd": 105,
+      "spe": 171
+    },
+    "bst": 875,
+    "usage": 5.6,
+    "art": "https://img.pokebase.app/pokemon-champions/ctVRT6RR0EsAdQoKAyaSl-160x160.png",
+    "sprite": "sprites/garchomp-mega-z.png"
+  },
+  {
+    "id": "gardevoir-mega",
+    "name": "Mega Gardevoir",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 143,
+      "atk": 105,
+      "def": 85,
+      "spa": 185,
+      "spd": 155,
+      "spe": 120
+    },
+    "bst": 793,
+    "usage": 8.4,
+    "art": "https://img.pokebase.app/pokemon-champions/dsdj7dS1ITikQZMq1nKPa-160x160.png",
+    "sprite": "sprites/gardevoir-mega.png"
+  },
+  {
+    "id": "gengar-mega",
+    "name": "Mega Gengar",
+    "types": [
+      "Ghost",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 85,
+      "def": 100,
+      "spa": 190,
+      "spd": 115,
+      "spe": 150
+    },
+    "bst": 775,
+    "usage": 3.5,
+    "art": "https://img.pokebase.app/pokemon-champions/uCjZqDuE_O3fS3TyMxe-V-160x160.png",
+    "sprite": "sprites/gengar-mega.png"
+  },
+  {
+    "id": "glalie-mega",
+    "name": "Mega Glalie",
+    "types": [
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 140,
+      "def": 100,
+      "spa": 140,
+      "spd": 100,
+      "spe": 120
+    },
+    "bst": 755,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/-2GyrUdXTIDylFt1_DKzU-160x160.png",
+    "sprite": "sprites/glalie-mega.png"
+  },
+  {
+    "id": "glimmora-mega",
+    "name": "Mega Glimmora",
+    "types": [
+      "Rock",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 158,
+      "atk": 110,
+      "def": 125,
+      "spa": 170,
+      "spd": 116,
+      "spe": 121
+    },
+    "bst": 800,
+    "usage": 2,
+    "art": "https://img.pokebase.app/pokemon-champions/FvrtzIO1ZovXlzUp6FVhy-160x160.png",
+    "sprite": "sprites/glimmora-mega.png"
+  },
+  {
+    "id": "golisopod-mega",
+    "name": "Mega Golisopod",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 170,
+      "def": 195,
+      "spa": 90,
+      "spd": 140,
+      "spe": 60
+    },
+    "bst": 805,
+    "usage": 17,
+    "art": "https://img.pokebase.app/pokemon-champions/xTYNUKMyo4M91H25m4mj9-160x160.png",
+    "sprite": "sprites/golisopod-mega.png"
+  },
+  {
+    "id": "golurk-mega",
+    "name": "Mega Golurk",
+    "types": [
+      "Ground",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 164,
+      "atk": 179,
+      "def": 125,
+      "spa": 90,
+      "spd": 125,
+      "spe": 75
+    },
+    "bst": 758,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/oxn7501u7mkf2wxKXA_YI-160x160.png",
+    "sprite": "sprites/golurk-mega.png"
+  },
+  {
+    "id": "greninja-mega",
+    "name": "Mega Greninja",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 147,
+      "atk": 145,
+      "def": 97,
+      "spa": 153,
+      "spd": 101,
+      "spe": 162
+    },
+    "bst": 805,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/eidLtEXNl7i26UIVvx04G-160x160.png",
+    "sprite": "sprites/greninja-mega.png"
+  },
+  {
+    "id": "gyarados-mega",
+    "name": "Mega Gyarados",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 175,
+      "def": 129,
+      "spa": 90,
+      "spd": 150,
+      "spe": 101
+    },
+    "bst": 815,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/jmBTzMkR3WA4BqkMu9Nb1-160x160.png",
+    "sprite": "sprites/gyarados-mega.png"
+  },
+  {
+    "id": "hawlucha-mega",
+    "name": "Mega Hawlucha",
+    "types": [
+      "Fighting",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 157,
+      "def": 120,
+      "spa": 94,
+      "spd": 113,
+      "spe": 138
+    },
+    "bst": 775,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/yVPsXJetuHJe5qviHXxTm-160x160.png",
+    "sprite": "sprites/hawlucha-mega.png"
+  },
+  {
+    "id": "heracross-mega",
+    "name": "Mega Heracross",
+    "types": [
+      "Bug",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 205,
+      "def": 135,
+      "spa": 60,
+      "spd": 125,
+      "spe": 95
+    },
+    "bst": 775,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/5w7yESUYVijLpNMhWy_Hj-160x160.png",
+    "sprite": "sprites/heracross-mega.png"
+  },
+  {
+    "id": "houndoom-mega",
+    "name": "Mega Houndoom",
+    "types": [
+      "Dark",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 110,
+      "def": 110,
+      "spa": 160,
+      "spd": 110,
+      "spe": 135
+    },
+    "bst": 775,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/IoXeLJGy5TGFsSwv7gano-160x160.png",
+    "sprite": "sprites/houndoom-mega.png"
+  },
+  {
+    "id": "kangaskhan-mega",
+    "name": "Mega Kangaskhan",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 180,
+      "atk": 145,
+      "def": 120,
+      "spa": 80,
+      "spd": 120,
+      "spe": 120
+    },
+    "bst": 765,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/hOWaxAvZcgEPJghbt0uFz-160x160.png",
+    "sprite": "sprites/kangaskhan-mega.png"
+  },
+  {
+    "id": "lopunny-mega",
+    "name": "Mega Lopunny",
+    "types": [
+      "Normal",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 156,
+      "def": 114,
+      "spa": 74,
+      "spd": 116,
+      "spe": 155
+    },
+    "bst": 755,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/1YSGGxcaUnAmIeMxyi4MK-160x160.png",
+    "sprite": "sprites/lopunny-mega.png"
+  },
+  {
+    "id": "lucario-mega",
+    "name": "Mega Lucario",
+    "types": [
+      "Fighting",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 165,
+      "def": 108,
+      "spa": 160,
+      "spd": 90,
+      "spe": 132
+    },
+    "bst": 800,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/9Y_N2XGNZHXV3TBxrYBI2-160x160.png",
+    "sprite": "sprites/lucario-mega.png"
+  },
+  {
+    "id": "lucario-mega-z",
+    "name": "Mega Lucario Z",
+    "types": [
+      "Fighting",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 120,
+      "def": 90,
+      "spa": 184,
+      "spd": 90,
+      "spe": 171
+    },
+    "bst": 800,
+    "usage": 5.8,
+    "art": "https://img.pokebase.app/pokemon-champions/TFgU1DHKfH8g7cmzYxJsJ-160x160.png",
+    "sprite": "sprites/lucario-mega-z.png"
+  },
+  {
+    "id": "malamar-mega",
+    "name": "Mega Malamar",
+    "types": [
+      "Dark",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 161,
+      "atk": 122,
+      "def": 108,
+      "spa": 118,
+      "spd": 140,
+      "spe": 108
+    },
+    "bst": 757,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/Q2DC_G4ksy6eHyUKvTGLm-160x160.png",
+    "sprite": "sprites/malamar-mega.png"
+  },
+  {
+    "id": "manectric-mega",
+    "name": "Mega Manectric",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 95,
+      "def": 100,
+      "spa": 155,
+      "spd": 100,
+      "spe": 155
+    },
+    "bst": 750,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/A2_tYtKOri0qN3KX5k9nK-160x160.png",
+    "sprite": "sprites/manectric-mega.png"
+  },
+  {
+    "id": "mawile-mega",
+    "name": "Mega Mawile",
+    "types": [
+      "Steel",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 125,
+      "def": 145,
+      "spa": 75,
+      "spd": 115,
+      "spe": 70
+    },
+    "bst": 655,
+    "usage": 2.2,
+    "art": "https://img.pokebase.app/pokemon-champions/mbRwe7M0IwoSSsL__ql-8-160x160.png",
+    "sprite": "sprites/mawile-mega.png"
+  },
+  {
+    "id": "medicham-mega",
+    "name": "Mega Medicham",
+    "types": [
+      "Fighting",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 120,
+      "def": 105,
+      "spa": 100,
+      "spd": 105,
+      "spe": 120
+    },
+    "bst": 685,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/sldHJKi9OtjiL2YABxffS-160x160.png",
+    "sprite": "sprites/medicham-mega.png"
+  },
+  {
+    "id": "meganium-mega",
+    "name": "Mega Meganium",
+    "types": [
+      "Grass",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 112,
+      "def": 135,
+      "spa": 163,
+      "spd": 135,
+      "spe": 100
+    },
+    "bst": 800,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/6CKh9LUkHx6dG8xGJjq8_-160x160.png",
+    "sprite": "sprites/meganium-mega.png"
+  },
+  {
+    "id": "meowstic-mega",
+    "name": "Mega Meowstic",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 149,
+      "atk": 68,
+      "def": 96,
+      "spa": 163,
+      "spd": 121,
+      "spe": 144
+    },
+    "bst": 741,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/GkquHnegC_0PUVOOXKuoG-160x160.png",
+    "sprite": "sprites/meowstic-mega.png"
+  },
+  {
+    "id": "metagross-mega",
+    "name": "Mega Metagross",
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 165,
+      "def": 170,
+      "spa": 125,
+      "spd": 130,
+      "spe": 130
+    },
+    "bst": 875,
+    "usage": 4.7,
+    "art": "https://img.pokebase.app/pokemon-champions/VRCfW9VvWfw6aCgKyWC7P-160x160.png",
+    "sprite": "sprites/metagross-mega.png"
+  },
+  {
+    "id": "pidgeot-mega",
+    "name": "Mega Pidgeot",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 158,
+      "atk": 100,
+      "def": 100,
+      "spa": 155,
+      "spd": 100,
+      "spe": 141
+    },
+    "bst": 754,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/56tyldDlpwlXNVRtJK7AY-160x160.png",
+    "sprite": "sprites/pidgeot-mega.png"
+  },
+  {
+    "id": "pinsir-mega",
+    "name": "Mega Pinsir",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 175,
+      "def": 140,
+      "spa": 85,
+      "spd": 110,
+      "spe": 125
+    },
+    "bst": 775,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/vfsOox9TPotmef-YCGL-V-160x160.png",
+    "sprite": "sprites/pinsir-mega.png"
+  },
+  {
+    "id": "pyroar-mega",
+    "name": "Mega Pyroar",
+    "types": [
+      "Fire",
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 161,
+      "atk": 108,
+      "def": 112,
+      "spa": 149,
+      "spd": 106,
+      "spe": 146
+    },
+    "bst": 782,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/GNmFu3EUtny1rQ5csuIdw-160x160.png",
+    "sprite": "sprites/pyroar-mega.png"
+  },
+  {
+    "id": "raichu-mega-x",
+    "name": "Mega Raichu X",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 155,
+      "def": 115,
+      "spa": 110,
+      "spd": 115,
+      "spe": 130
+    },
+    "bst": 760,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/DeMT1crWEzCuTr66da0sG-160x160.png",
+    "sprite": "sprites/raichu-mega-x.png"
+  },
+  {
+    "id": "raichu-mega-y",
+    "name": "Mega Raichu Y",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 120,
+      "def": 75,
+      "spa": 180,
+      "spd": 100,
+      "spe": 150
+    },
+    "bst": 760,
+    "usage": 10.8,
+    "art": "https://img.pokebase.app/pokemon-champions/vVp0g7rVPXqXyCk5qH0bg-160x160.png",
+    "sprite": "sprites/raichu-mega-y.png"
+  },
+  {
+    "id": "sableye-mega",
+    "name": "Mega Sableye",
+    "types": [
+      "Dark",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 105,
+      "def": 145,
+      "spa": 105,
+      "spd": 135,
+      "spe": 40
+    },
+    "bst": 655,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/tyYNgrFK4u4I8RXWrhtEI-160x160.png",
+    "sprite": "sprites/sableye-mega.png"
+  },
+  {
+    "id": "salamence-mega",
+    "name": "Mega Salamence",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 165,
+      "def": 150,
+      "spa": 140,
+      "spd": 110,
+      "spe": 140
+    },
+    "bst": 875,
+    "usage": 34.6,
+    "art": "https://img.pokebase.app/pokemon-champions/NwJYIOlU4PcSuSD7rCxzl-160x160.png",
+    "sprite": "sprites/salamence-mega.png"
+  },
+  {
+    "id": "sceptile-mega",
+    "name": "Mega Sceptile",
+    "types": [
+      "Grass",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 130,
+      "def": 95,
+      "spa": 165,
+      "spd": 105,
+      "spe": 165
+    },
+    "bst": 805,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/TfBtTBTfjPtSqM5nvVzia-160x160.png",
+    "sprite": "sprites/sceptile-mega.png"
+  },
+  {
+    "id": "scizor-mega",
+    "name": "Mega Scizor",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 170,
+      "def": 160,
+      "spa": 85,
+      "spd": 120,
+      "spe": 95
+    },
+    "bst": 775,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/C3B02uU88Z0kXbJ54bfqP-160x160.png",
+    "sprite": "sprites/scizor-mega.png"
+  },
+  {
+    "id": "scolipede-mega",
+    "name": "Mega Scolipede",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 160,
+      "def": 169,
+      "spa": 95,
+      "spd": 119,
+      "spe": 82
+    },
+    "bst": 760,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/EXgPxWhgCBm6EbcnkS3i0-160x160.png",
+    "sprite": "sprites/scolipede-mega.png"
+  },
+  {
+    "id": "scovillain-mega",
+    "name": "Mega Scovillain",
+    "types": [
+      "Grass",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 158,
+      "def": 105,
+      "spa": 158,
+      "spd": 105,
+      "spe": 95
+    },
+    "bst": 761,
+    "usage": 1.1,
+    "art": "https://img.pokebase.app/pokemon-champions/d3mwWomEAhIMx_R9YkVis-160x160.png",
+    "sprite": "sprites/scovillain-mega.png"
+  },
+  {
+    "id": "scrafty-mega",
+    "name": "Mega Scrafty",
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 150,
+      "def": 155,
+      "spa": 75,
+      "spd": 155,
+      "spe": 88
+    },
+    "bst": 763,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/QcN4gCZPU7SERnvrORHr2-160x160.png",
+    "sprite": "sprites/scrafty-mega.png"
+  },
+  {
+    "id": "sharpedo-mega",
+    "name": "Mega Sharpedo",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 160,
+      "def": 90,
+      "spa": 130,
+      "spd": 85,
+      "spe": 125
+    },
+    "bst": 735,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/KXaPd4ucdDoVG5a86Hna_-160x160.png",
+    "sprite": "sprites/sharpedo-mega.png"
+  },
+  {
+    "id": "skarmory-mega",
+    "name": "Mega Skarmory",
+    "types": [
+      "Steel",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 160,
+      "def": 130,
+      "spa": 60,
+      "spd": 120,
+      "spe": 130
+    },
+    "bst": 740,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/UkdOrfd711NBvznU7BIGg-160x160.png",
+    "sprite": "sprites/skarmory-mega.png"
+  },
+  {
+    "id": "slowbro-mega",
+    "name": "Mega Slowbro",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 95,
+      "def": 200,
+      "spa": 150,
+      "spd": 100,
+      "spe": 50
+    },
+    "bst": 765,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/dlhU0E5nLOUHQeJZ8d3b1-160x160.png",
+    "sprite": "sprites/slowbro-mega.png"
+  },
+  {
+    "id": "staraptor-mega",
+    "name": "Mega Staraptor",
+    "types": [
+      "Fighting",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 160,
+      "def": 120,
+      "spa": 80,
+      "spd": 110,
+      "spe": 130
+    },
+    "bst": 760,
+    "usage": 5,
+    "art": "https://img.pokebase.app/pokemon-champions/id5CbERDwZaVSOipDfXsD-160x160.png",
+    "sprite": "sprites/staraptor-mega.png"
+  },
+  {
+    "id": "starmie-mega",
+    "name": "Mega Starmie",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 120,
+      "def": 125,
+      "spa": 150,
+      "spd": 125,
+      "spe": 140
+    },
+    "bst": 795,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/_OWsxQFO_kJWdsiJhwvzt-160x160.png",
+    "sprite": "sprites/starmie-mega.png"
+  },
+  {
+    "id": "steelix-mega",
+    "name": "Mega Steelix",
+    "types": [
+      "Steel",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 145,
+      "def": 250,
+      "spa": 75,
+      "spd": 115,
+      "spe": 50
+    },
+    "bst": 785,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/XH4xZOBDXf7x5k29A3Bvg-160x160.png",
+    "sprite": "sprites/steelix-mega.png"
+  },
+  {
+    "id": "swampert-mega",
+    "name": "Mega Swampert",
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 170,
+      "def": 130,
+      "spa": 115,
+      "spd": 130,
+      "spe": 90
+    },
+    "bst": 810,
+    "usage": 3.5,
+    "art": "https://img.pokebase.app/pokemon-champions/KqkMabT04-0D-Ar5VKykv-160x160.png",
+    "sprite": "sprites/swampert-mega.png"
+  },
+  {
+    "id": "tyranitar-mega",
+    "name": "Mega Tyranitar",
+    "types": [
+      "Rock",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 184,
+      "def": 170,
+      "spa": 115,
+      "spd": 140,
+      "spe": 91
+    },
+    "bst": 875,
+    "usage": 6.3,
+    "art": "https://img.pokebase.app/pokemon-champions/1oFvmatUdwSSoltUbE8d--160x160.png",
+    "sprite": "sprites/tyranitar-mega.png"
+  },
+  {
+    "id": "venusaur-mega",
+    "name": "Mega Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 120,
+      "def": 143,
+      "spa": 142,
+      "spd": 140,
+      "spe": 100
+    },
+    "bst": 800,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/Jj0c95DGm0JjYzzoYTvwJ-160x160.png",
+    "sprite": "sprites/venusaur-mega.png"
+  },
+  {
+    "id": "victreebel-mega",
+    "name": "Mega Victreebel",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 145,
+      "def": 105,
+      "spa": 155,
+      "spd": 115,
+      "spe": 90
+    },
+    "bst": 765,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/S1BxL3FsaoyJqOncXiMXc-160x160.png",
+    "sprite": "sprites/victreebel-mega.png"
+  },
+  {
+    "id": "meganium",
+    "name": "Meganium",
+    "types": [
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 102,
+      "def": 120,
+      "spa": 103,
+      "spd": 120,
+      "spe": 100
+    },
+    "bst": 700,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/Pa-UazPH1uC52dvcMDwhN-160x160.png",
+    "sprite": "sprites/meganium.png"
+  },
+  {
+    "id": "meowscarada",
+    "name": "Meowscarada",
+    "types": [
+      "Grass",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 151,
+      "atk": 130,
+      "def": 90,
+      "spa": 101,
+      "spd": 90,
+      "spe": 143
+    },
+    "bst": 705,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/9kiuGH06pjLISVSySseux-160x160.png",
+    "sprite": "sprites/meowscarada.png"
+  },
+  {
+    "id": "meowstic",
+    "name": "Meowstic",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 149,
+      "atk": 68,
+      "def": 96,
+      "spa": 103,
+      "spd": 101,
+      "spe": 124
+    },
+    "bst": 641,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/4p40QadTeio3YQYDadFhP-160x160.png",
+    "sprite": "sprites/meowstic.png"
+  },
+  {
+    "id": "meowstic-female",
+    "name": "Meowstic (Female)",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 149,
+      "atk": 68,
+      "def": 96,
+      "spa": 103,
+      "spd": 101,
+      "spe": 124
+    },
+    "bst": 641,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/XsEqQU3DPk5SEcW4PaWQL-160x160.png",
+    "sprite": "sprites/meowstic-female.png"
+  },
+  {
+    "id": "metagross",
+    "name": "Metagross",
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 155,
+      "def": 150,
+      "spa": 115,
+      "spd": 110,
+      "spe": 90
+    },
+    "bst": 775,
+    "usage": 4.8,
+    "art": "https://img.pokebase.app/pokemon-champions/RZN80GFzjEwuQg9dnliow-160x160.png",
+    "sprite": "sprites/metagross.png"
+  },
+  {
+    "id": "milotic",
+    "name": "Milotic",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 80,
+      "def": 99,
+      "spa": 120,
+      "spd": 145,
+      "spe": 101
+    },
+    "bst": 715,
+    "usage": 9.7,
+    "art": "https://img.pokebase.app/pokemon-champions/vao1WKN72l2FkvnKUp4tq-160x160.png",
+    "sprite": "sprites/milotic.png"
+  },
+  {
+    "id": "mimikyu",
+    "name": "Mimikyu",
+    "types": [
+      "Ghost",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 130,
+      "atk": 110,
+      "def": 100,
+      "spa": 70,
+      "spd": 125,
+      "spe": 116
+    },
+    "bst": 651,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/y8raL-vXi8yfNvbglIePU-160x160.png",
+    "sprite": "sprites/mimikyu.png"
+  },
+  {
+    "id": "morpeko",
+    "name": "Morpeko",
+    "types": [
+      "Electric",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 115,
+      "def": 78,
+      "spa": 90,
+      "spd": 78,
+      "spe": 117
+    },
+    "bst": 611,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/fSQPmiNVkMNpCPrUEH8kn-160x160.png",
+    "sprite": "sprites/morpeko.png"
+  },
+  {
+    "id": "rotom-mow",
+    "name": "Mow Rotom",
+    "types": [
+      "Electric",
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 85,
+      "def": 127,
+      "spa": 125,
+      "spd": 127,
+      "spe": 106
+    },
+    "bst": 695,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/w4Mx8hzpGKgb0O5aVoW2g-160x160.png",
+    "sprite": "sprites/rotom-mow.png"
+  },
+  {
+    "id": "mr-mime",
+    "name": "Mr. Mime",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 115,
+      "atk": 65,
+      "def": 85,
+      "spa": 120,
+      "spd": 140,
+      "spe": 110
+    },
+    "bst": 635,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/nhEscdgjdmrnd6gEpnkKx-160x160.png",
+    "sprite": "sprites/mr-mime.png"
+  },
+  {
+    "id": "mr-rime",
+    "name": "Mr. Rime",
+    "types": [
+      "Ice",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 105,
+      "def": 95,
+      "spa": 130,
+      "spd": 120,
+      "spe": 90
+    },
+    "bst": 695,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/wLxtqubaH6hHuMC9aehx6-160x160.png",
+    "sprite": "sprites/mr-rime.png"
+  },
+  {
+    "id": "mudsdale",
+    "name": "Mudsdale",
+    "types": [
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 145,
+      "def": 120,
+      "spa": 75,
+      "spd": 105,
+      "spe": 55
+    },
+    "bst": 675,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/bSijto5TXv3zX4XEgkRaw-160x160.png",
+    "sprite": "sprites/mudsdale.png"
+  },
+  {
+    "id": "musharna",
+    "name": "Musharna",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 191,
+      "atk": 75,
+      "def": 105,
+      "spa": 127,
+      "spd": 115,
+      "spe": 49
+    },
+    "bst": 662,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/QqYTveYC5bogQJfVkLHHc-160x160.png",
+    "sprite": "sprites/musharna.png"
+  },
+  {
+    "id": "ninetales",
+    "name": "Ninetales",
+    "types": [
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 148,
+      "atk": 96,
+      "def": 95,
+      "spa": 101,
+      "spd": 120,
+      "spe": 120
+    },
+    "bst": 680,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/X4gc-lYO61-9kqG1zDZdj-160x160.png",
+    "sprite": "sprites/ninetales.png"
+  },
+  {
+    "id": "noivern",
+    "name": "Noivern",
+    "types": [
+      "Flying",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 90,
+      "def": 100,
+      "spa": 117,
+      "spd": 100,
+      "spe": 143
+    },
+    "bst": 710,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/LbposQ1jZGY7lxn6msdLH-160x160.png",
+    "sprite": "sprites/noivern.png"
+  },
+  {
+    "id": "oranguru",
+    "name": "Oranguru",
+    "types": [
+      "Normal",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 80,
+      "def": 100,
+      "spa": 110,
+      "spd": 130,
+      "spe": 80
+    },
+    "bst": 665,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/Ma79xl5fzl5mZWPIR8XpL-160x160.png",
+    "sprite": "sprites/oranguru.png"
+  },
+  {
+    "id": "orthworm",
+    "name": "Orthworm",
+    "types": [
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 105,
+      "def": 165,
+      "spa": 80,
+      "spd": 75,
+      "spe": 85
+    },
+    "bst": 655,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/YDsMhws_oT6iCVslrrRMd-160x160.png",
+    "sprite": "sprites/orthworm.png"
+  },
+  {
+    "id": "overqwil",
+    "name": "Overqwil",
+    "types": [
+      "Dark",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 135,
+      "def": 115,
+      "spa": 85,
+      "spd": 85,
+      "spe": 105
+    },
+    "bst": 685,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/oVvZTlLxCBSNy330fwYKi-160x160.png",
+    "sprite": "sprites/overqwil.png"
+  },
+  {
+    "id": "palafin",
+    "name": "Palafin",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 90,
+      "def": 92,
+      "spa": 73,
+      "spd": 82,
+      "spe": 120
+    },
+    "bst": 632,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/AA2q8-VXPWcdZ1u0ZZHob-160x160.png",
+    "sprite": "sprites/palafin.png"
+  },
+  {
+    "id": "tauros-paldea",
+    "name": "Paldean Tauros - Combat Breed",
+    "types": [
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 130,
+      "def": 125,
+      "spa": 50,
+      "spd": 90,
+      "spe": 120
+    },
+    "bst": 665,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/HGjPKaQ5jLkYNvjUspRzW-160x160.webp",
+    "sprite": "sprites/tauros-paldea.png"
+  },
+  {
+    "id": "pangoro",
+    "name": "Pangoro",
+    "types": [
+      "Fighting",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 144,
+      "def": 98,
+      "spa": 89,
+      "spd": 91,
+      "spe": 78
+    },
+    "bst": 670,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/9z1s2FSG2vDfVIsqpvpg1-160x160.png",
+    "sprite": "sprites/pangoro.png"
+  },
+  {
+    "id": "passimian",
+    "name": "Passimian",
+    "types": [
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 140,
+      "def": 110,
+      "spa": 60,
+      "spd": 80,
+      "spe": 100
+    },
+    "bst": 665,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/Ue6dB9qjndRg91NPIFZvd-160x160.png",
+    "sprite": "sprites/passimian.png"
+  },
+  {
+    "id": "pawmot",
+    "name": "Pawmot",
+    "types": [
+      "Electric",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 135,
+      "def": 90,
+      "spa": 90,
+      "spd": 80,
+      "spe": 125
+    },
+    "bst": 665,
+    "usage": 3.6,
+    "art": "https://img.pokebase.app/pokemon-champions/gmbMAEC9quPSEhSYB8THs-160x160.png",
+    "sprite": "sprites/pawmot.png"
+  },
+  {
+    "id": "pelipper",
+    "name": "Pelipper",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 70,
+      "def": 120,
+      "spa": 115,
+      "spd": 90,
+      "spe": 85
+    },
+    "bst": 615,
+    "usage": 14.1,
+    "art": "https://img.pokebase.app/pokemon-champions/8PlwgulOEu_XlnRlHFUXe-160x160.png",
+    "sprite": "sprites/pelipper.png"
+  },
+  {
+    "id": "perrserker",
+    "name": "Perrserker",
+    "types": [
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 130,
+      "def": 120,
+      "spa": 70,
+      "spd": 80,
+      "spe": 70
+    },
+    "bst": 615,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/04Ay0hhTU_CcqZdzPqMdE-160x160.png",
+    "sprite": "sprites/perrserker.png"
+  },
+  {
+    "id": "persian",
+    "name": "Persian",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 90,
+      "def": 80,
+      "spa": 85,
+      "spd": 85,
+      "spe": 135
+    },
+    "bst": 615,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/FCWmktSIQvEBZrJ_TPN8E-160x160.png",
+    "sprite": "sprites/persian.png"
+  },
+  {
+    "id": "pidgeot",
+    "name": "Pidgeot",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 158,
+      "atk": 100,
+      "def": 95,
+      "spa": 90,
+      "spd": 90,
+      "spe": 121
+    },
+    "bst": 654,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/D333AMdgnFc9HFQTNY1IY-160x160.png",
+    "sprite": "sprites/pidgeot.png"
+  },
+  {
+    "id": "pikachu",
+    "name": "Pikachu",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 110,
+      "atk": 75,
+      "def": 60,
+      "spa": 70,
+      "spd": 70,
+      "spe": 110
+    },
+    "bst": 495,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/owfLB4O9i0c6R-rUS9IMJ-160x160.png",
+    "sprite": "sprites/pikachu.png"
+  },
+  {
+    "id": "pincurchin",
+    "name": "Pincurchin",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 123,
+      "atk": 121,
+      "def": 115,
+      "spa": 111,
+      "spd": 105,
+      "spe": 35
+    },
+    "bst": 610,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/s_bmXMMdZgchjUcuDGDtv-160x160.png",
+    "sprite": "sprites/pincurchin.png"
+  },
+  {
+    "id": "pinsir",
+    "name": "Pinsir",
+    "types": [
+      "Bug"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 145,
+      "def": 120,
+      "spa": 75,
+      "spd": 90,
+      "spe": 105
+    },
+    "bst": 675,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/ACmXtcSyWR6smitcP_Yyy-160x160.png",
+    "sprite": "sprites/pinsir.png"
+  },
+  {
+    "id": "politoed",
+    "name": "Politoed",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 165,
+      "atk": 95,
+      "def": 95,
+      "spa": 110,
+      "spd": 120,
+      "spe": 90
+    },
+    "bst": 675,
+    "usage": 3.5,
+    "art": "https://img.pokebase.app/pokemon-champions/icXXJyuOB1lHiyreTb6aq-160x160.png",
+    "sprite": "sprites/politoed.png"
+  },
+  {
+    "id": "polteageist",
+    "name": "Polteageist",
+    "types": [
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 85,
+      "def": 85,
+      "spa": 154,
+      "spd": 134,
+      "spe": 90
+    },
+    "bst": 683,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/-wSbTSUjqGI96SkgXO3Bt-160x160.png",
+    "sprite": "sprites/polteageist.png"
+  },
+  {
+    "id": "primarina",
+    "name": "Primarina",
+    "types": [
+      "Water",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 94,
+      "def": 94,
+      "spa": 146,
+      "spd": 136,
+      "spe": 80
+    },
+    "bst": 705,
+    "usage": 3.4,
+    "art": "https://img.pokebase.app/pokemon-champions/7-IvrzN7cTW-mIBSD_utZ-160x160.png",
+    "sprite": "sprites/primarina.png"
+  },
+  {
+    "id": "pyroar",
+    "name": "Pyroar",
+    "types": [
+      "Fire",
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 161,
+      "atk": 88,
+      "def": 92,
+      "spa": 129,
+      "spd": 86,
+      "spe": 126
+    },
+    "bst": 682,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/fZElhYojSJvU6sWiRGvme-160x160.png",
+    "sprite": "sprites/pyroar.png"
+  },
+  {
+    "id": "quaquaval",
+    "name": "Quaquaval",
+    "types": [
+      "Water",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 140,
+      "def": 100,
+      "spa": 105,
+      "spd": 95,
+      "spe": 105
+    },
+    "bst": 705,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/-7RHHVPmP5kfvvncovdTA-160x160.png",
+    "sprite": "sprites/quaquaval.png"
+  },
+  {
+    "id": "qwilfish",
+    "name": "Qwilfish",
+    "types": [
+      "Water",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 115,
+      "def": 105,
+      "spa": 75,
+      "spd": 75,
+      "spe": 105
+    },
+    "bst": 615,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/rluLMybTnLUXFoczay-wV-160x160.png",
+    "sprite": "sprites/qwilfish.png"
+  },
+  {
+    "id": "raichu",
+    "name": "Raichu",
+    "types": [
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 110,
+      "def": 75,
+      "spa": 110,
+      "spd": 100,
+      "spe": 130
+    },
+    "bst": 660,
+    "usage": 11.4,
+    "art": "https://img.pokebase.app/pokemon-champions/vph7eukbXh7oBKgQiYHDL-160x160.png",
+    "sprite": "sprites/raichu.png"
+  },
+  {
+    "id": "rampardos",
+    "name": "Rampardos",
+    "types": [
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 172,
+      "atk": 185,
+      "def": 80,
+      "spa": 85,
+      "spd": 70,
+      "spe": 78
+    },
+    "bst": 670,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/ZE7aUeWrbF-etdSxC1Hz5-160x160.png",
+    "sprite": "sprites/rampardos.png"
+  },
+  {
+    "id": "reuniclus",
+    "name": "Reuniclus",
+    "types": [
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 185,
+      "atk": 85,
+      "def": 95,
+      "spa": 145,
+      "spd": 105,
+      "spe": 50
+    },
+    "bst": 665,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/ijvbeAsHhMTos_LcxfDez-160x160.png",
+    "sprite": "sprites/reuniclus.png"
+  },
+  {
+    "id": "rhyperior",
+    "name": "Rhyperior",
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "baseStats": {
+      "hp": 190,
+      "atk": 160,
+      "def": 150,
+      "spa": 75,
+      "spd": 75,
+      "spe": 60
+    },
+    "bst": 710,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/E7v80jTQtsIA01yb10rxC-160x160.png",
+    "sprite": "sprites/rhyperior.png"
+  },
+  {
+    "id": "rillaboom",
+    "name": "Rillaboom",
+    "types": [
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 145,
+      "def": 110,
+      "spa": 80,
+      "spd": 90,
+      "spe": 105
+    },
+    "bst": 705,
+    "usage": 51.6,
+    "art": "https://img.pokebase.app/pokemon-champions/Gy34KTI1acyHaINUacGxC-160x160.png",
+    "sprite": "sprites/rillaboom.png"
+  },
+  {
+    "id": "roserade",
+    "name": "Roserade",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 90,
+      "def": 85,
+      "spa": 145,
+      "spd": 125,
+      "spe": 110
+    },
+    "bst": 690,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/lwaA4aycVcQmMGV81KXMH-160x160.png",
+    "sprite": "sprites/roserade.png"
+  },
+  {
+    "id": "rotom",
+    "name": "Rotom",
+    "types": [
+      "Electric",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 70,
+      "def": 97,
+      "spa": 115,
+      "spd": 97,
+      "spe": 111
+    },
+    "bst": 615,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/NeP0jZzsQiNamdHUt9IoB-160x160.png",
+    "sprite": "sprites/rotom.png"
+  },
+  {
+    "id": "runerigus",
+    "name": "Runerigus",
+    "types": [
+      "Ground",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 133,
+      "atk": 115,
+      "def": 165,
+      "spa": 70,
+      "spd": 125,
+      "spe": 50
+    },
+    "bst": 658,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/pELHYPdNpNz5rin8u6Ajx-160x160.png",
+    "sprite": "sprites/runerigus.png"
+  },
+  {
+    "id": "sableye",
+    "name": "Sableye",
+    "types": [
+      "Dark",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 95,
+      "def": 95,
+      "spa": 85,
+      "spd": 85,
+      "spe": 70
+    },
+    "bst": 555,
+    "usage": 1.8,
+    "art": "https://img.pokebase.app/pokemon-champions/TpAZ_BQHQgVeBrd730FmD-160x160.png",
+    "sprite": "sprites/sableye.png"
+  },
+  {
+    "id": "salamence",
+    "name": "Salamence",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 155,
+      "def": 100,
+      "spa": 130,
+      "spd": 100,
+      "spe": 120
+    },
+    "bst": 775,
+    "usage": 34.6,
+    "art": "https://img.pokebase.app/pokemon-champions/kg520MEw1PJObk5f6V8yw-160x160.png",
+    "sprite": "sprites/salamence.png"
+  },
+  {
+    "id": "salazzle",
+    "name": "Salazzle",
+    "types": [
+      "Poison",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 143,
+      "atk": 84,
+      "def": 80,
+      "spa": 131,
+      "spd": 80,
+      "spe": 137
+    },
+    "bst": 655,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/7QkKXxu3i_NntGKRcKgLX-160x160.png",
+    "sprite": "sprites/salazzle.png"
+  },
+  {
+    "id": "samurott",
+    "name": "Samurott",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 120,
+      "def": 105,
+      "spa": 128,
+      "spd": 90,
+      "spe": 90
+    },
+    "bst": 703,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/zFAjKAaOtPPhqcxIIAwrZ-160x160.png",
+    "sprite": "sprites/samurott.png"
+  },
+  {
+    "id": "sandaconda",
+    "name": "Sandaconda",
+    "types": [
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 147,
+      "atk": 127,
+      "def": 145,
+      "spa": 85,
+      "spd": 90,
+      "spe": 91
+    },
+    "bst": 685,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/eJbWQCgUOrhoTozmcESGw-160x160.png",
+    "sprite": "sprites/sandaconda.png"
+  },
+  {
+    "id": "sceptile",
+    "name": "Sceptile",
+    "types": [
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 105,
+      "def": 85,
+      "spa": 125,
+      "spd": 105,
+      "spe": 140
+    },
+    "bst": 705,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/oJJ80HqLIruN3N1znxLAF-160x160.png",
+    "sprite": "sprites/sceptile.png"
+  },
+  {
+    "id": "scizor",
+    "name": "Scizor",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 150,
+      "def": 120,
+      "spa": 75,
+      "spd": 100,
+      "spe": 85
+    },
+    "bst": 675,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/GPqqPaRzYPgrceJseoYfd-160x160.png",
+    "sprite": "sprites/scizor.png"
+  },
+  {
+    "id": "scolipede",
+    "name": "Scolipede",
+    "types": [
+      "Bug",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 120,
+      "def": 109,
+      "spa": 75,
+      "spd": 89,
+      "spe": 132
+    },
+    "bst": 660,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/wy_NlJLExS4tY_zMdufWL-160x160.png",
+    "sprite": "sprites/scolipede.png"
+  },
+  {
+    "id": "scovillain",
+    "name": "Scovillain",
+    "types": [
+      "Grass",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 128,
+      "def": 85,
+      "spa": 128,
+      "spd": 85,
+      "spe": 95
+    },
+    "bst": 661,
+    "usage": 1.2,
+    "art": "https://img.pokebase.app/pokemon-champions/kb-xBLBrW5_K9i8Z5BWkJ-160x160.png",
+    "sprite": "sprites/scovillain.png"
+  },
+  {
+    "id": "scrafty",
+    "name": "Scrafty",
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 110,
+      "def": 135,
+      "spa": 65,
+      "spd": 135,
+      "spe": 78
+    },
+    "bst": 663,
+    "usage": 0.7,
+    "art": "https://img.pokebase.app/pokemon-champions/rQzWfA_qY9vzyqWBS1d51-160x160.png",
+    "sprite": "sprites/scrafty.png"
+  },
+  {
+    "id": "serperior",
+    "name": "Serperior",
+    "types": [
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 95,
+      "def": 115,
+      "spa": 95,
+      "spd": 115,
+      "spe": 133
+    },
+    "bst": 703,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/xckW7PhAOt3qQ3J_52f1J-160x160.png",
+    "sprite": "sprites/serperior.png"
+  },
+  {
+    "id": "sharpedo",
+    "name": "Sharpedo",
+    "types": [
+      "Water",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 140,
+      "def": 60,
+      "spa": 115,
+      "spd": 60,
+      "spe": 115
+    },
+    "bst": 635,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/K4ZGAk9fiaWjQpnY3dLfT-160x160.png",
+    "sprite": "sprites/sharpedo.png"
+  },
+  {
+    "id": "simipour",
+    "name": "Simipour",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 118,
+      "def": 83,
+      "spa": 118,
+      "spd": 83,
+      "spe": 121
+    },
+    "bst": 673,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/S7ndmTXEUcwCyqBT6j_hM-160x160.png",
+    "sprite": "sprites/simipour.png"
+  },
+  {
+    "id": "simisage",
+    "name": "Simisage",
+    "types": [
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 118,
+      "def": 83,
+      "spa": 118,
+      "spd": 83,
+      "spe": 121
+    },
+    "bst": 673,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/a4DaqKVr56cXuqU7_I00J-160x160.png",
+    "sprite": "sprites/simisage.png"
+  },
+  {
+    "id": "simisear",
+    "name": "Simisear",
+    "types": [
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 118,
+      "def": 83,
+      "spa": 118,
+      "spd": 83,
+      "spe": 121
+    },
+    "bst": 673,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/2XaCX7Grc5s-Ewgs76PvA-160x160.png",
+    "sprite": "sprites/simisear.png"
+  },
+  {
+    "id": "sinistcha",
+    "name": "Sinistcha",
+    "types": [
+      "Grass",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 146,
+      "atk": 80,
+      "def": 126,
+      "spa": 141,
+      "spd": 100,
+      "spe": 90
+    },
+    "bst": 683,
+    "usage": 6.6,
+    "art": "https://img.pokebase.app/pokemon-champions/D6zsKfL5OLLnjQP4b7uB--160x160.png",
+    "sprite": "sprites/sinistcha.png"
+  },
+  {
+    "id": "sirfetchd",
+    "name": "Sirfetch’d",
+    "types": [
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 137,
+      "atk": 155,
+      "def": 115,
+      "spa": 88,
+      "spd": 102,
+      "spe": 85
+    },
+    "bst": 682,
+    "usage": 0.8,
+    "art": "https://img.pokebase.app/pokemon-champions/5V3gPOUPV5cPTe0w7t2WU-160x160.png",
+    "sprite": "sprites/sirfetchd.png"
+  },
+  {
+    "id": "skarmory",
+    "name": "Skarmory",
+    "types": [
+      "Steel",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 140,
+      "atk": 100,
+      "def": 160,
+      "spa": 60,
+      "spd": 90,
+      "spe": 90
+    },
+    "bst": 640,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/HpRnrKH_UWaljbOHdxiVL-160x160.png",
+    "sprite": "sprites/skarmory.png"
+  },
+  {
+    "id": "skeledirge",
+    "name": "Skeledirge",
+    "types": [
+      "Fire",
+      "Ghost"
+    ],
+    "baseStats": {
+      "hp": 179,
+      "atk": 95,
+      "def": 120,
+      "spa": 130,
+      "spd": 95,
+      "spe": 86
+    },
+    "bst": 705,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/JEL9l7uqeWd2SECcOnL8B-160x160.png",
+    "sprite": "sprites/skeledirge.png"
+  },
+  {
+    "id": "slowbro",
+    "name": "Slowbro",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 95,
+      "def": 130,
+      "spa": 120,
+      "spd": 100,
+      "spe": 50
+    },
+    "bst": 665,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/IsPxrjQl1Q03K8S6uLpc6-160x160.png",
+    "sprite": "sprites/slowbro.png"
+  },
+  {
+    "id": "slowking",
+    "name": "Slowking",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 95,
+      "def": 100,
+      "spa": 120,
+      "spd": 130,
+      "spe": 50
+    },
+    "bst": 665,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/cV2gTwfJlG_lTRxtuRUI3-160x160.png",
+    "sprite": "sprites/slowking.png"
+  },
+  {
+    "id": "slurpuff",
+    "name": "Slurpuff",
+    "types": [
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 157,
+      "atk": 100,
+      "def": 106,
+      "spa": 105,
+      "spd": 95,
+      "spe": 92
+    },
+    "bst": 655,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/8xZCqITv2UDfof9E1eJtS-160x160.png",
+    "sprite": "sprites/slurpuff.png"
+  },
+  {
+    "id": "sneasler",
+    "name": "Sneasler",
+    "types": [
+      "Fighting",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 150,
+      "def": 80,
+      "spa": 60,
+      "spd": 100,
+      "spe": 140
+    },
+    "bst": 685,
+    "usage": 47.3,
+    "art": "https://img.pokebase.app/pokemon-champions/Zw_vVVnoT594WNEJ2PB7M-160x160.png",
+    "sprite": "sprites/sneasler.png"
+  },
+  {
+    "id": "snorlax",
+    "name": "Snorlax",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 235,
+      "atk": 130,
+      "def": 85,
+      "spa": 85,
+      "spd": 130,
+      "spe": 50
+    },
+    "bst": 715,
+    "usage": 0.8,
+    "art": "https://img.pokebase.app/pokemon-champions/Uab5BVMo8ADp4IpYszpiy-160x160.png",
+    "sprite": "sprites/snorlax.png"
+  },
+  {
+    "id": "spiritomb",
+    "name": "Spiritomb",
+    "types": [
+      "Ghost",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 112,
+      "def": 128,
+      "spa": 112,
+      "spd": 128,
+      "spe": 55
+    },
+    "bst": 660,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/sg170oj6125cBjM9PuV4H-160x160.png",
+    "sprite": "sprites/spiritomb.png"
+  },
+  {
+    "id": "squawkabilly",
+    "name": "Squawkabilly",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 157,
+      "atk": 116,
+      "def": 71,
+      "spa": 65,
+      "spd": 71,
+      "spe": 112
+    },
+    "bst": 592,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/sXDvBeH10nf2vsNAy5xVq-160x160.png",
+    "sprite": "sprites/squawkabilly.png"
+  },
+  {
+    "id": "staraptor",
+    "name": "Staraptor",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 140,
+      "def": 90,
+      "spa": 70,
+      "spd": 80,
+      "spe": 120
+    },
+    "bst": 660,
+    "usage": 5.6,
+    "art": "https://img.pokebase.app/pokemon-champions/65bvknbslHs_q2yAvTtMU-160x160.png",
+    "sprite": "sprites/staraptor.png"
+  },
+  {
+    "id": "starmie",
+    "name": "Starmie",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 95,
+      "def": 105,
+      "spa": 120,
+      "spd": 105,
+      "spe": 135
+    },
+    "bst": 695,
+    "usage": 0.3,
+    "art": "https://img.pokebase.app/pokemon-champions/vugYBbZ5Mk0HD_S6cqqbs-160x160.png",
+    "sprite": "sprites/starmie.png"
+  },
+  {
+    "id": "steelix",
+    "name": "Steelix",
+    "types": [
+      "Steel",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 105,
+      "def": 220,
+      "spa": 75,
+      "spd": 85,
+      "spe": 50
+    },
+    "bst": 685,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/eM23UwdDPRISHEpk4FWN4-160x160.png",
+    "sprite": "sprites/steelix.png"
+  },
+  {
+    "id": "stunfisk",
+    "name": "Stunfisk",
+    "types": [
+      "Ground",
+      "Electric"
+    ],
+    "baseStats": {
+      "hp": 184,
+      "atk": 86,
+      "def": 104,
+      "spa": 101,
+      "spd": 119,
+      "spe": 52
+    },
+    "bst": 646,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/KBnpe2K_EV5cw8pa-IHk4-160x160.png",
+    "sprite": "sprites/stunfisk.png"
+  },
+  {
+    "id": "swalot",
+    "name": "Swalot",
+    "types": [
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 93,
+      "def": 103,
+      "spa": 93,
+      "spd": 103,
+      "spe": 75
+    },
+    "bst": 642,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/pQv30WAbQ77PlxQT0mOrG-160x160.png",
+    "sprite": "sprites/swalot.png"
+  },
+  {
+    "id": "swampert",
+    "name": "Swampert",
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 130,
+      "def": 110,
+      "spa": 105,
+      "spd": 110,
+      "spe": 80
+    },
+    "bst": 710,
+    "usage": 3.8,
+    "art": "https://img.pokebase.app/pokemon-champions/JCBo_9obc2cQgxDqw9iBG-160x160.png",
+    "sprite": "sprites/swampert.png"
+  },
+  {
+    "id": "sylveon",
+    "name": "Sylveon",
+    "types": [
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 85,
+      "def": 85,
+      "spa": 130,
+      "spd": 150,
+      "spe": 80
+    },
+    "bst": 700,
+    "usage": 11.1,
+    "art": "https://img.pokebase.app/pokemon-champions/7qB1XeDSGUQDraUmo5Xyo-160x160.png",
+    "sprite": "sprites/sylveon.png"
+  },
+  {
+    "id": "talonflame",
+    "name": "Talonflame",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 101,
+      "def": 91,
+      "spa": 94,
+      "spd": 89,
+      "spe": 146
+    },
+    "bst": 674,
+    "usage": 2.1,
+    "art": "https://img.pokebase.app/pokemon-champions/nwG3yz8qCzSiOKBtPfuQM-160x160.png",
+    "sprite": "sprites/talonflame.png"
+  },
+  {
+    "id": "tauros",
+    "name": "Tauros",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 120,
+      "def": 115,
+      "spa": 60,
+      "spd": 90,
+      "spe": 130
+    },
+    "bst": 665,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/sG0hW58QAuy0keZtXjBoC-160x160.png",
+    "sprite": "sprites/tauros.png"
+  },
+  {
+    "id": "tauros-paldea-aqua-breed",
+    "name": "Tauros - Paldea Aqua Breed",
+    "types": [
+      "Fighting",
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 130,
+      "def": 125,
+      "spa": 50,
+      "spd": 90,
+      "spe": 120
+    },
+    "bst": 665,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/N--wj-NbCiFgkEThn4aR2-160x160.png",
+    "sprite": "sprites/tauros-paldea-aqua-breed.png"
+  },
+  {
+    "id": "tauros-paldea-blaze-breed",
+    "name": "Tauros - Paldea Blaze Breed",
+    "types": [
+      "Fighting",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 130,
+      "def": 125,
+      "spa": 50,
+      "spd": 90,
+      "spe": 120
+    },
+    "bst": 665,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/RbvkCZj392q8SNozA5usx-160x160.png",
+    "sprite": "sprites/tauros-paldea-blaze-breed.png"
+  },
+  {
+    "id": "thievul",
+    "name": "Thievul",
+    "types": [
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 78,
+      "def": 78,
+      "spa": 107,
+      "spd": 112,
+      "spe": 110
+    },
+    "bst": 630,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/NE8fLGyzc_iUAu41D5zsk-160x160.png",
+    "sprite": "sprites/thievul.png"
+  },
+  {
+    "id": "tinkaton",
+    "name": "Tinkaton",
+    "types": [
+      "Fairy",
+      "Steel"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 95,
+      "def": 97,
+      "spa": 90,
+      "spd": 125,
+      "spe": 114
+    },
+    "bst": 681,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/o9lGuqkykKhF3z5qwSEwU-160x160.png",
+    "sprite": "sprites/tinkaton.png"
+  },
+  {
+    "id": "torkoal",
+    "name": "Torkoal",
+    "types": [
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 105,
+      "def": 160,
+      "spa": 105,
+      "spd": 90,
+      "spe": 40
+    },
+    "bst": 645,
+    "usage": 5.8,
+    "art": "https://img.pokebase.app/pokemon-champions/z7sSOt7rkl0SbIYOgWTXx-160x160.png",
+    "sprite": "sprites/torkoal.png"
+  },
+  {
+    "id": "torterra",
+    "name": "Torterra",
+    "types": [
+      "Grass",
+      "Ground"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 129,
+      "def": 125,
+      "spa": 95,
+      "spd": 105,
+      "spe": 76
+    },
+    "bst": 700,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/bh9Y9RXOnRi40aGWzATac-160x160.png",
+    "sprite": "sprites/torterra.png"
+  },
+  {
+    "id": "toucannon",
+    "name": "Toucannon",
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 140,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 80
+    },
+    "bst": 660,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/7pKoRqa88WwHqe8IASQAH-160x160.png",
+    "sprite": "sprites/toucannon.png"
+  },
+  {
+    "id": "toxapex",
+    "name": "Toxapex",
+    "types": [
+      "Poison",
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 83,
+      "def": 172,
+      "spa": 73,
+      "spd": 162,
+      "spe": 55
+    },
+    "bst": 670,
+    "usage": 1.6,
+    "art": "https://img.pokebase.app/pokemon-champions/m8hHKqNETgT9NCT1pV-zV-160x160.png",
+    "sprite": "sprites/toxapex.png"
+  },
+  {
+    "id": "toxicroak",
+    "name": "Toxicroak",
+    "types": [
+      "Poison",
+      "Fighting"
+    ],
+    "baseStats": {
+      "hp": 158,
+      "atk": 126,
+      "def": 85,
+      "spa": 106,
+      "spd": 85,
+      "spe": 105
+    },
+    "bst": 665,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/PYjsojLkgDL694zSvteOJ-160x160.png",
+    "sprite": "sprites/toxicroak.png"
+  },
+  {
+    "id": "toxtricity-amped",
+    "name": "Toxtricity (Amped)",
+    "types": [
+      "Electric",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 118,
+      "def": 90,
+      "spa": 134,
+      "spd": 90,
+      "spe": 95
+    },
+    "bst": 677,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/qyktQ2esr8X-up1H1xpQs-160x160.png",
+    "sprite": "sprites/toxtricity-amped.png"
+  },
+  {
+    "id": "toxtricity-low-key",
+    "name": "Toxtricity (Low Key)",
+    "types": [
+      "Electric",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 118,
+      "def": 90,
+      "spa": 134,
+      "spd": 90,
+      "spe": 95
+    },
+    "bst": 677,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/w2oWUrdD-QWSZDEkfaNve-160x160.png",
+    "sprite": "sprites/toxtricity-low-key.png"
+  },
+  {
+    "id": "trevenant",
+    "name": "Trevenant",
+    "types": [
+      "Ghost",
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 130,
+      "def": 96,
+      "spa": 85,
+      "spd": 102,
+      "spe": 76
+    },
+    "bst": 649,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/53DqtJy5iWvhMLYbNIDsk-160x160.png",
+    "sprite": "sprites/trevenant.png"
+  },
+  {
+    "id": "tsareena",
+    "name": "Tsareena",
+    "types": [
+      "Grass"
+    ],
+    "baseStats": {
+      "hp": 147,
+      "atk": 140,
+      "def": 118,
+      "spa": 70,
+      "spd": 118,
+      "spe": 92
+    },
+    "bst": 685,
+    "usage": 0.6,
+    "art": "https://img.pokebase.app/pokemon-champions/4DjTvWYiOAadIzv02yDPP-160x160.png",
+    "sprite": "sprites/tsareena.png"
+  },
+  {
+    "id": "typhlosion",
+    "name": "Typhlosion",
+    "types": [
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 153,
+      "atk": 104,
+      "def": 98,
+      "spa": 129,
+      "spd": 105,
+      "spe": 120
+    },
+    "bst": 709,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/6-GjkuUcnqWiUY_dE2Lx0-160x160.png",
+    "sprite": "sprites/typhlosion.png"
+  },
+  {
+    "id": "tyranitar",
+    "name": "Tyranitar",
+    "types": [
+      "Rock",
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 175,
+      "atk": 154,
+      "def": 130,
+      "spa": 115,
+      "spd": 120,
+      "spe": 81
+    },
+    "bst": 775,
+    "usage": 8.1,
+    "art": "https://img.pokebase.app/pokemon-champions/cdJT_t4WWmE5HNfNzYUfm-160x160.png",
+    "sprite": "sprites/tyranitar.png"
+  },
+  {
+    "id": "tyrantrum",
+    "name": "Tyrantrum",
+    "types": [
+      "Rock",
+      "Dragon"
+    ],
+    "baseStats": {
+      "hp": 157,
+      "atk": 141,
+      "def": 139,
+      "spa": 89,
+      "spd": 79,
+      "spe": 91
+    },
+    "bst": 696,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/6aF4govhtdvyL_v2JdIco-160x160.png",
+    "sprite": "sprites/tyrantrum.png"
+  },
+  {
+    "id": "umbreon",
+    "name": "Umbreon",
+    "types": [
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 170,
+      "atk": 85,
+      "def": 130,
+      "spa": 80,
+      "spd": 150,
+      "spe": 85
+    },
+    "bst": 700,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/tqWM-DpXjYbVG4nqI6b7s-160x160.png",
+    "sprite": "sprites/umbreon.png"
+  },
+  {
+    "id": "vanilluxe",
+    "name": "Vanilluxe",
+    "types": [
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 146,
+      "atk": 115,
+      "def": 105,
+      "spa": 130,
+      "spd": 115,
+      "spe": 99
+    },
+    "bst": 710,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/e5V2-bPn40PMmxwOyPVe--160x160.png",
+    "sprite": "sprites/vanilluxe.png"
+  },
+  {
+    "id": "vaporeon",
+    "name": "Vaporeon",
+    "types": [
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 205,
+      "atk": 85,
+      "def": 80,
+      "spa": 130,
+      "spd": 115,
+      "spe": 85
+    },
+    "bst": 700,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/e_hzW4AoXqUGQemGvo4qW-160x160.png",
+    "sprite": "sprites/vaporeon.png"
+  },
+  {
+    "id": "venusaur",
+    "name": "Venusaur",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 102,
+      "def": 103,
+      "spa": 120,
+      "spd": 120,
+      "spe": 100
+    },
+    "bst": 700,
+    "usage": 4,
+    "art": "https://img.pokebase.app/pokemon-champions/rUIBNg19mDy91WRgIQR4J-160x160.png",
+    "sprite": "sprites/venusaur.png"
+  },
+  {
+    "id": "victreebel",
+    "name": "Victreebel",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 125,
+      "def": 85,
+      "spa": 120,
+      "spd": 90,
+      "spe": 90
+    },
+    "bst": 665,
+    "usage": null,
+    "art": "https://img.pokebase.app/pokemon-champions/WzTHYy20vAGdmAKYnf2f_-160x160.png",
+    "sprite": "sprites/victreebel.png"
+  },
+  {
+    "id": "vileplume",
+    "name": "Vileplume",
+    "types": [
+      "Grass",
+      "Poison"
+    ],
+    "baseStats": {
+      "hp": 150,
+      "atk": 100,
+      "def": 105,
+      "spa": 130,
+      "spd": 110,
+      "spe": 70
+    },
+    "bst": 665,
+    "usage": 0.4,
+    "art": "https://img.pokebase.app/pokemon-champions/4oDmcRMMupl6I3YCYKEAt-160x160.png",
+    "sprite": "sprites/vileplume.png"
+  },
+  {
+    "id": "vivillon",
+    "name": "Vivillon",
+    "types": [
+      "Bug",
+      "Flying"
+    ],
+    "baseStats": {
+      "hp": 155,
+      "atk": 72,
+      "def": 70,
+      "spa": 110,
+      "spd": 70,
+      "spe": 109
+    },
+    "bst": 586,
+    "usage": 0.5,
+    "art": "https://img.pokebase.app/pokemon-champions/3iPQzh9-8lezTrM7sBH4q-160x160.png",
+    "sprite": "sprites/vivillon.png"
+  },
+  {
+    "id": "volcarona",
+    "name": "Volcarona",
+    "types": [
+      "Bug",
+      "Fire"
+    ],
+    "baseStats": {
+      "hp": 160,
+      "atk": 80,
+      "def": 85,
+      "spa": 155,
+      "spd": 125,
+      "spe": 120
+    },
+    "bst": 725,
+    "usage": 5.1,
+    "art": "https://img.pokebase.app/pokemon-champions/NkmrFUeF-we5iT13AjIgY-160x160.png",
+    "sprite": "sprites/volcarona.png"
+  },
+  {
+    "id": "rotom-wash",
+    "name": "Wash Rotom",
+    "types": [
+      "Electric",
+      "Water"
+    ],
+    "baseStats": {
+      "hp": 125,
+      "atk": 85,
+      "def": 127,
+      "spa": 125,
+      "spd": 127,
+      "spe": 106
+    },
+    "bst": 695,
+    "usage": 0.9,
+    "art": "https://img.pokebase.app/pokemon-champions/dhqpaV7KdSjzMXUJ0evVE-160x160.png",
+    "sprite": "sprites/rotom-wash.png"
+  },
+  {
+    "id": "watchog",
+    "name": "Watchog",
+    "types": [
+      "Normal"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 105,
+      "def": 89,
+      "spa": 80,
+      "spd": 89,
+      "spe": 97
+    },
+    "bst": 595,
+    "usage": 0,
+    "art": "https://img.pokebase.app/pokemon-champions/IyFcVME7W2WTU4lJvgEiw-160x160.png",
+    "sprite": "sprites/watchog.png"
+  },
+  {
+    "id": "weavile",
+    "name": "Weavile",
+    "types": [
+      "Dark",
+      "Ice"
+    ],
+    "baseStats": {
+      "hp": 145,
+      "atk": 140,
+      "def": 85,
+      "spa": 65,
+      "spd": 105,
+      "spe": 145
+    },
+    "bst": 685,
+    "usage": 0.7,
+    "art": "https://img.pokebase.app/pokemon-champions/91NCqgKJbGlsDbKPFpWVl-160x160.png",
+    "sprite": "sprites/weavile.png"
+  },
+  {
+    "id": "whimsicott",
+    "name": "Whimsicott",
+    "types": [
+      "Grass",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 87,
+      "def": 105,
+      "spa": 97,
+      "spd": 95,
+      "spe": 136
+    },
+    "bst": 655,
+    "usage": 6,
+    "art": "https://img.pokebase.app/pokemon-champions/RJ7QULrl4FOGabfgbLZ9Q-160x160.png",
+    "sprite": "sprites/whimsicott.png"
+  },
+  {
+    "id": "wigglytuff",
+    "name": "Wigglytuff",
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "baseStats": {
+      "hp": 215,
+      "atk": 90,
+      "def": 65,
+      "spa": 105,
+      "spd": 70,
+      "spe": 65
+    },
+    "bst": 610,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/n65Fr1WAT7bFG_lBQjsgJ-160x160.png",
+    "sprite": "sprites/wigglytuff.png"
+  },
+  {
+    "id": "wyrdeer",
+    "name": "Wyrdeer",
+    "types": [
+      "Normal",
+      "Psychic"
+    ],
+    "baseStats": {
+      "hp": 178,
+      "atk": 125,
+      "def": 92,
+      "spa": 125,
+      "spd": 95,
+      "spe": 85
+    },
+    "bst": 700,
+    "usage": 0.2,
+    "art": "https://img.pokebase.app/pokemon-champions/M5uY4n81I2DwvJIogDpbH-160x160.png",
+    "sprite": "sprites/wyrdeer.png"
+  },
+  {
+    "id": "zoroark",
+    "name": "Zoroark",
+    "types": [
+      "Dark"
+    ],
+    "baseStats": {
+      "hp": 135,
+      "atk": 125,
+      "def": 80,
+      "spa": 140,
+      "spd": 80,
+      "spe": 125
+    },
+    "bst": 685,
+    "usage": 0.1,
+    "art": "https://img.pokebase.app/pokemon-champions/DSsvO-IYkDCb0YfHq0jDu-160x160.png",
+    "sprite": "sprites/zoroark.png"
+  }
+]

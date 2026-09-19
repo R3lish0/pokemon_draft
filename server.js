@@ -1,324 +1,213 @@
-console.log('Starting server...');
+'use strict';
 
 const express = require('express');
 const http = require('http');
-const WebSocket = require('ws');
 const path = require('path');
-const fs = require('fs');
+const { WebSocketServer } = require('ws');
+
+const pokedex = require('./src/pokedex');
+const rooms = require('./src/rooms');
+
+const PORT = Number(process.env.PORT) || 3000;
+const HEARTBEAT_MS = 30 * 1000;
+const MAX_PAYLOAD_BYTES = 16 * 1024;
+
+const loaded = pokedex.load();
+console.log(`Loaded ${loaded.count} Pokemon from ${loaded.source}`);
 
 const app = express();
+app.use(express.static(path.join(__dirname, 'public'), { extensions: ['html'] }));
+app.get('/healthz', (_req, res) => res.json({ ok: true, ...rooms.stats() }));
+
 const server = http.createServer(app);
-const wss = new WebSocket.Server({ server });
+const wss = new WebSocketServer({ server, maxPayload: MAX_PAYLOAD_BYTES });
 
-const PORT = process.env.PORT || 3000;
+// --------------------------------------------------------------- transport
 
-// Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Store active rooms
-const rooms = new Map();
-
-// Load the Pokédex data
-let pokedex;
-try {
-    const pokedexData = fs.readFileSync('pokedex.json', 'utf8');
-    pokedex = JSON.parse(pokedexData);
-} catch (error) {
-    console.error('Error loading Pokédex data:', error);
-    process.exit(1);
+function send(socket, payload) {
+    if (!socket || socket.readyState !== socket.OPEN) return;
+    socket.send(JSON.stringify(payload));
 }
 
-// Load Pokemon data
-let pokemonData;
-try {
-    const rawData = fs.readFileSync(path.join('pokedex.json'), 'utf8');
-    pokemonData = JSON.parse(rawData);
-    console.log('Pokemon data loaded successfully');
-} catch (error) {
-    console.error('Error loading Pokemon data:', error);
-    pokemonData = [];
+function sendError(socket, code, message) {
+    send(socket, { type: 'error', code, message });
 }
 
-wss.on('connection', (ws) => {
-    console.log('New WebSocket connection');
+function sendWelcome(socket, player, resumed) {
+    send(socket, {
+        type: 'welcome',
+        playerId: player ? player.id : null,
+        name: player ? player.name : null,
+        resumed,
+        limits: rooms.LIMITS,
+        dexSize: pokedex.size(),
+    });
+}
 
-    ws.on('message', (message) => {
-        console.log('Received message:', message.toString());
+/**
+ * The one place a room's truth leaves the process: every connected player
+ * gets the same authoritative snapshot, then any ephemeral events that
+ * accumulated during the mutation. Events never carry state of their own,
+ * so a client that ignores them entirely still renders correctly.
+ */
+function publish(room) {
+    const events = room.events.splice(0);
+
+    for (const player of room.players) {
+        send(player.socket, rooms.stateFor(room, player));
+    }
+    for (const event of events) {
+        const message = { type: 'event', ...event };
+        for (const player of room.players) send(player.socket, message);
+    }
+}
+
+rooms.configure({ publish });
+rooms.startSweeper();
+
+// ---------------------------------------------------------------- handlers
+
+/** Every handler receives the socket's bound session, so no message carries a roomCode. */
+const handlers = {
+    hello(socket, data) {
+        const resumed = data.playerId ? rooms.findPlayer(String(data.playerId)) : null;
+
+        if (resumed) {
+            socket.session = resumed;
+            sendWelcome(socket, resumed.player, true);
+            rooms.attachSocket(resumed.player, resumed.room, socket);
+        } else {
+            sendWelcome(socket, null, false);
+        }
+    },
+
+    createRoom(socket, data) {
+        requireNoSession(socket);
+        const room = rooms.createRoom(data.config);
+        const player = rooms.addPlayer(room, data.name);
+        socket.session = { room, player };
+        sendWelcome(socket, player, false);
+        rooms.attachSocket(player, room, socket);
+    },
+
+    joinRoom(socket, data) {
+        requireNoSession(socket);
+        const room = rooms.getRoom(data.code);
+        const player = rooms.addPlayer(room, data.name);
+        socket.session = { room, player };
+        sendWelcome(socket, player, false);
+        rooms.attachSocket(player, room, socket);
+    },
+
+    setName(socket, data) {
+        const { room, player } = requireSession(socket);
+        rooms.setName(player, room, data.name);
+    },
+
+    startDraft(socket) {
+        const { room, player } = requireSession(socket);
+        rooms.startDraft(player, room);
+    },
+
+    pick(socket, data) {
+        const { room, player } = requireSession(socket);
+        rooms.pick(player, room, String(data.pokemonId || ''));
+    },
+
+    leaveRoom(socket) {
+        const { room, player } = requireSession(socket);
+        socket.session = null;
+        rooms.leaveRoom(player, room);
+        send(socket, { type: 'left' });
+    },
+};
+
+function requireSession(socket) {
+    if (!socket.session) {
+        throw new rooms.DraftError('no_session', 'You are not in a draft room.');
+    }
+    return socket.session;
+}
+
+function requireNoSession(socket) {
+    if (socket.session) {
+        throw new rooms.DraftError('already_in_room', 'Leave your current room first.');
+    }
+}
+
+// ------------------------------------------------------------- connections
+
+wss.on('connection', (socket) => {
+    socket.session = null;
+    socket.isAlive = true;
+    socket.on('pong', () => {
+        socket.isAlive = true;
+    });
+
+    socket.on('message', (raw) => {
+        let data;
         try {
-            const data = JSON.parse(message);
-            console.log('Parsed data:', data);
-            
-            switch(data.type) {
-                case 'create':
-                    createRoom(ws, data.numPlayers);
-                    break;
-                case 'join':
-                    joinRoom(ws, data.roomCode);
-                    break;
-                case 'selectSlot':
-                    selectSlot(ws, data.slotIndex, data.roomCode);
-                    break;
-                case 'startGame':
-                    console.log('Received start game request');
-                    startGame(ws, data.roomCode);
-                    break;
-                case 'choose':
-                    choosePokemon(ws, data.roomCode, data.pokemon);
-                    break;
-                default:
-                    console.warn('Unknown message type:', data.type);
-            }
+            data = JSON.parse(raw.toString());
+        } catch {
+            sendError(socket, 'bad_json', 'That message could not be read.');
+            return;
+        }
+
+        const handler = data && typeof data.type === 'string' ? handlers[data.type] : null;
+        if (!handler) {
+            sendError(socket, 'unknown_type', `Unsupported message type: ${data && data.type}`);
+            return;
+        }
+
+        try {
+            handler(socket, data);
         } catch (error) {
-            console.error('Error processing message:', error);
+            if (error instanceof rooms.DraftError) {
+                sendError(socket, error.code, error.message);
+            } else {
+                console.error(`Handler "${data.type}" failed:`, error);
+                sendError(socket, 'internal', 'Something went wrong on the server.');
+            }
         }
     });
 
-    ws.on('close', () => {
-        console.log('WebSocket connection closed');
-        if (ws.roomCode) {
-            const room = rooms.get(ws.roomCode);
-            if (room) {
-                const playerIndex = room.players.indexOf(ws);
-                if (playerIndex !== -1) {
-                    room.players[playerIndex] = null;
-                    broadcastWaitingRoom(ws.roomCode);
-                }
-            }
+    socket.on('close', () => {
+        const session = socket.session;
+        socket.session = null;
+        if (session && session.player.socket === socket) {
+            rooms.detachSocket(session.player, session.room);
         }
     });
+
+    socket.on('error', (error) => console.error('Socket error:', error.message));
 });
 
-function createRoom(ws, numPlayers) {
-    const roomCode = Math.random().toString(36).substring(2, 8).toUpperCase();
-    console.log(`Creating room with code: ${roomCode} for ${numPlayers} players`);
-    rooms.set(roomCode, {
-        players: new Array(numPlayers).fill(null),
-        numPlayers: numPlayers,
-        availablePokemon: [],
-        teams: [],
-        currentPlayer: 0,
-        currentRound: 1,
-        gameStarted: false,
-        isForward: true  // Add direction tracking
-    });
-    joinRoom(ws, roomCode);
-}
-
-function joinRoom(ws, roomCode) {
-    console.log(`Player attempting to join room: ${roomCode}`);
-    const room = rooms.get(roomCode);
-    if (room && !room.gameStarted) {
-        const emptySlot = room.players.findIndex(player => player === null);
-        if (emptySlot !== -1) {
-            room.players[emptySlot] = ws;
-            ws.roomCode = roomCode;
-            ws.playerIndex = emptySlot;
-            console.log(`Player joined room ${roomCode} in slot ${emptySlot}`);
-            broadcastWaitingRoom(roomCode);
-        } else {
-            console.log(`Room ${roomCode} is full`);
-            ws.send(JSON.stringify({ type: 'error', message: 'Room is full' }));
+// Drops half-open connections so a killed tab does not hold a lobby seat forever.
+const heartbeat = setInterval(() => {
+    for (const socket of wss.clients) {
+        if (socket.isAlive === false) {
+            socket.terminate();
+            continue;
         }
-    } else {
-        console.log(`Invalid room code or game already started: ${roomCode}`);
-        ws.send(JSON.stringify({ type: 'error', message: 'Invalid room code or game already started' }));
+        socket.isAlive = false;
+        socket.ping();
     }
-}
-
-function selectSlot(ws, slotIndex, roomCode) {
-    console.log(`Player selecting slot ${slotIndex} in room ${roomCode}`);
-    const room = rooms.get(roomCode);
-    if (room && !room.gameStarted) {
-        // ... (rest of the function remains the same)
-    }
-}
-
-function startGame(ws, roomCode) {
-    console.log(`Attempting to start game for room: ${roomCode}`);
-    const room = rooms.get(roomCode);
-    if (!room) {
-        console.log(`Room ${roomCode} not found`);
-        ws.send(JSON.stringify({ type: 'error', message: 'Room not found' }));
-        return;
-    }
-
-    if (room.gameStarted) {
-        console.log(`Game already started in room ${roomCode}`);
-        ws.send(JSON.stringify({ type: 'error', message: 'Game already started' }));
-        return;
-    }
-
-    const filledSlots = room.players.filter(player => player !== null).length;
-    console.log(`Filled slots: ${filledSlots}, Total slots: ${room.numPlayers}`);
-
-    if (filledSlots === room.numPlayers) {
-        room.gameStarted = true;
-        room.availablePokemon = generateRandomPool(room.numPlayers * 4);
-        console.log(`Generated ${room.availablePokemon.length} Pokemon for the pool`);
-        room.teams = Array(room.numPlayers).fill().map(() => []);
-        room.currentPlayer = 0;
-        room.currentRound = 1;
-        console.log(`Game started in room ${roomCode}. Current player: ${room.currentPlayer}`);
-        broadcastGameState(roomCode);
-    } else {
-        console.log(`Not all slots filled in room ${roomCode}. Filled: ${filledSlots}/${room.numPlayers}`);
-        ws.send(JSON.stringify({ type: 'error', message: `Cannot start game. Only ${filledSlots}/${room.numPlayers} slots are filled.` }));
-    }
-}
-
-function broadcastWaitingRoom(roomCode) {
-    const room = rooms.get(roomCode);
-    if (!room) {
-        console.error(`Room ${roomCode} not found when broadcasting waiting room`);
-        return;
-    }
-    
-    const waitingState = {
-        type: 'waitingRoom',
-        roomCode: roomCode,
-        players: room.players.map(p => p !== null),
-        numPlayers: room.numPlayers
-    };
-    
-    room.players.forEach((player, index) => {
-        if (player) {
-            player.send(JSON.stringify({
-                ...waitingState,
-                yourIndex: index
-            }));
-        }
-    });
-}
-
-function broadcastGameState(roomCode) {
-    const room = rooms.get(roomCode);
-    if (!room) {
-        console.error(`Room ${roomCode} not found when broadcasting game state`);
-        return;
-    }
-    
-    console.log(`Broadcasting game state for room ${roomCode}`);
-    room.players.forEach((player, index) => {
-        if (player) {
-            player.send(JSON.stringify({
-                type: 'gameState',
-                roomCode: roomCode,
-                availablePokemon: room.availablePokemon,
-                teams: room.teams,
-                currentPlayer: room.currentPlayer,
-                currentRound: room.currentRound,
-                playerIndex: index
-            }));
-        }
-    });
-}
-
-function generateRandomPool(size) {
-    console.log('Generating random pool of size:', size);
-    console.log('Pokemon data type:', typeof pokemonData);
-    console.log('Pokemon data structure:', JSON.stringify(pokemonData).slice(0, 100) + '...');
-
-    let pool;
-    if (Array.isArray(pokemonData)) {
-        pool = pokemonData;
-    } else if (typeof pokemonData === 'object') {
-        pool = Object.values(pokemonData);
-    } else {
-        console.error('Invalid Pokemon data structure');
-        return [];
-    }
-
-    if (pool.length === 0) {
-        console.error('No Pokemon data available');
-        return [];
-    }
-
-    const shuffled = pool.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, size);
-}
-
-function choosePokemon(ws, roomCode, pokemon) {
-    console.log(`Player in room ${roomCode} is choosing Pokemon:`, pokemon.name);
-    const room = rooms.get(roomCode);
-    if (!room || !room.gameStarted) {
-        console.log(`Invalid room or game not started: ${roomCode}`);
-        ws.send(JSON.stringify({ type: 'error', message: 'Invalid room or game not started' }));
-        return;
-    }
-
-    const playerIndex = room.players.indexOf(ws);
-    if (playerIndex !== room.currentPlayer) {
-        console.log(`Not this player's turn. Current player: ${room.currentPlayer}, Attempting player: ${playerIndex}`);
-        ws.send(JSON.stringify({ type: 'error', message: 'Not your turn' }));
-        return;
-    }
-
-    const pokemonIndex = room.availablePokemon.findIndex(p => p.name === pokemon.name);
-    if (pokemonIndex === -1) {
-        console.log(`Pokemon ${pokemon.name} not found in available pool`);
-        ws.send(JSON.stringify({ type: 'error', message: 'Invalid Pokemon selection' }));
-        return;
-    }
-
-    // Remove Pokemon and add to team
-    const chosenPokemon = room.availablePokemon.splice(pokemonIndex, 1)[0];
-    room.teams[playerIndex].push(chosenPokemon);
-
-    // Broadcast reveal
-    room.players.forEach(player => {
-        if (player) {
-            player.send(JSON.stringify({
-                type: 'reveal',
-                playerIndex: playerIndex,
-                pokemon: chosenPokemon
-            }));
-        }
-    });
-
-    // Update next player based on direction
-    if (room.isForward) {
-        room.currentPlayer++;
-        if (room.currentPlayer >= room.numPlayers) {
-            room.currentPlayer = room.numPlayers - 1;
-            room.isForward = false;
-            room.currentRound++;
-        }
-    } else {
-        room.currentPlayer--;
-        if (room.currentPlayer < 0) {
-            room.currentPlayer = 0;
-            room.isForward = true;
-            room.currentRound++;
-        }
-    }
-
-    console.log(`Updated game state: Player ${room.currentPlayer}, Round ${room.currentRound}, Direction ${room.isForward ? 'forward' : 'backward'}`);
-
-    // Check if game is over
-    if (room.currentRound > 4) {
-        console.log(`Game over in room ${roomCode}`);
-        room.players.forEach(player => {
-            if (player) {
-                player.send(JSON.stringify({
-                    type: 'gameOver',
-                    teams: room.teams
-                }));
-            }
-        });
-        rooms.delete(roomCode);
-    } else {
-        broadcastGameState(roomCode);
-    }
-}
+}, HEARTBEAT_MS);
+heartbeat.unref();
 
 server.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Pokemon Draft running at http://localhost:${PORT}`);
 });
 
-process.on('uncaughtException', (error) => {
-    console.error('Uncaught Exception:', error);
-});
+function shutdown(signal) {
+    console.log(`\n${signal} received, shutting down.`);
+    clearInterval(heartbeat);
+    for (const socket of wss.clients) socket.close(1001, 'Server shutting down');
+    server.close(() => process.exit(0));
+    setTimeout(() => process.exit(0), 3000).unref();
+}
 
-process.on('unhandledRejection', (reason, promise) => {
-    console.error('Unhandled Rejection at:', promise, 'reason:', reason);
-});
+process.on('SIGINT', () => shutdown('SIGINT'));
+process.on('SIGTERM', () => shutdown('SIGTERM'));
+process.on('uncaughtException', (error) => console.error('Uncaught exception:', error));
+process.on('unhandledRejection', (reason) => console.error('Unhandled rejection:', reason));
